@@ -1,0 +1,98 @@
+@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
+@prefix csd: <https://linked.data.gov.au/def/csdm/csd/> .
+@prefix container: <https://linked.data.gov.au/def/csdm/container/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix jcl: <https://linked.data.gov.au/def/csdm/jurisdictionalcodes/> .
+@prefix vb: <https://utility.ns/> .
+@prefix termtype:       <https://linked.data.gov.au/def/csdm/termtypes/> .
+
+
+jcl:testBoundVocab-form
+    a sh:NodeShape ;
+    sh:targetObjectsOf surv:monumentedBy;
+    sh:message "Monument Form value not in target vocabulary" ;
+    sh:name "Monument Form Term type" ;
+    sh:property [
+                sh:name "form" ;
+                sh:path surv:form;
+                sh:class surv:MonumentForm] ;
+
+.
+
+jcl:testBoundVocab-condition
+    a sh:NodeShape ;
+    sh:targetObjectsOf surv:monumentedBy;
+    sh:message "Monument Condition value not in target vocabulary" ;
+    sh:name "Monument Condition Term type" ;
+    sh:property [
+                sh:name "condition" ;
+                sh:path surv:condition;
+                sh:class surv:ConditionCode] ;
+.
+
+jcl:testBoundVocab-state
+    a sh:NodeShape ;
+    sh:targetObjectsOf surv:monumentedBy;
+    sh:message "Monument State value not in target vocabulary" ;
+    sh:name "Monument State Term type" ;
+    sh:property [
+                sh:name "state" ;
+                sh:path surv:state;
+                sh:class surv:SurveyPointState]
+.
+
+
+
+jcl:testBoundVocab-surveypoint-purpose
+    a sh:NodeShape ;
+    sh:targetClass surv:BoundaryMark, surv:CadastralMark , surv:GeodeticReferenceMark , surv:OccupationMark  ;
+    sh:subjectsOf surv:purpose ;
+    sh:message "Survey Point Purpose value not in target vocabulary" ;
+    sh:name "Survey Point Purpose Term type" ;
+    sh:property [
+                sh:path surv:purpose;
+                sh:class surv:SurveyPointPurpose]
+.
+
+jcl:testBoundVocab-pt-quality-class
+    a sh:NodeShape ;
+    sh:targetClass surv:BoundaryMark, surv:CadastralMark , surv:GeodeticReferenceMark , surv:OccupationMark  ;
+    sh:message "Survey Point QualityClass value not in target vocabulary" ;
+    sh:name "Survey Point QualityClass " ;
+    sh:property [
+                sh:path commonpatterns:qualityClass;
+                sh:class termtype:PointQualityClass ]
+.
+
+jcl:testBoundVocab-vector-purpose
+    a sh:NodeShape ;
+    sh:targetObjectsOf container:observedVectors, container:adoptedVectors  ;
+    sh:message "Vector Purpose not single valued or value not in target vocabulary" ;
+    sh:name "Vector Purpose Term type" ;
+    sh:property [
+                 sh:path     ( [ sh:zeroOrMorePath [ sh:oneOrMorePath [ sh:alternativePath ( [ sh:inversePath
+                                                                                                                geojson:features ]
+                                                                                                      [ sh:inversePath
+                                                                                                                sosa:hasMember ] ) ] ] ]
+                                        surv:vectorPurpose ) ;
+                sh:class termtype:VectorPurpose ;
+                # sh:minCount 1 ;
+                # sh:maxCount 1
+                ]
+.
+
+termtype:VectorPurpose rdfs:label "Vector Purpose" .
+
+
+surv:MonumentForm rdfs:label "Monument Form" .
+surv:ConditionCode rdfs:label "Monument Condition" .
+surv:SurveyPointState rdfs:label "Survey Point State" .
+surv:SurveyPurpose rdfs:label "Survey Purpose" .

@@ -1,0 +1,43 @@
+@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
+@prefix csd:            <https://linked.data.gov.au/def/csdm/csd/> .
+@prefix container:      <https://linked.data.gov.au/def/csdm/container/> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+@prefix geojson:        <https://purl.org/geojson/vocab#> .
+@prefix prov:           <http://www.w3.org/ns/prov#> .
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix parcel:         <https://linked.data.gov.au/def/csdm/parcels/> .
+@prefix sosa:           <http://www.w3.org/ns/sosa/> .
+@prefix surv:           <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:             <http://www.w3.org/ns/shacl#> .
+@prefix jcl:            <https://linked.data.gov.au/def/csdm/jurisdictionalcodes/> .
+@prefix vb:             <https://utility.ns/> .
+@prefix termtype:       <https://linked.data.gov.au/def/csdm/termtypes/> .
+
+
+jcl:testBoundVocab-parcelType
+    a                   sh:NodeShape ;
+    sh:targetSubjectsOf parcel:parcelType ;
+    sh:message          "ParcelType  value not in target vocabulary" ;
+    sh:name             "ParcelType Term type" ;
+    sh:property         [ sh:name "Parcel Type" ;
+                          sh:path parcel:parcelType ;
+                        sh:minCount 1 ;
+                        sh:nodeKind sh:IRI ] ;
+.
+
+jcl:testBoundVocab-parcelInterest
+    a                  sh:NodeShape ;
+    sh:targetObjectsOf parcel:interest ;
+    sh:message         "Interest Role Type  value not in target vocabulary" ;
+    sh:name            "Interest Term type" ;
+    sh:property        [ sh:name "Interest Type" ;
+                         sh:path parcel:interestLink ;
+                       sh:minCount 1  ;
+                        sh:nodeKind sh:IRI  ] ;
+.
+
+
+surv:ParcelType
+    rdfs:label "Parcel Type" .

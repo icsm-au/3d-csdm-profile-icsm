@@ -1,0 +1,14 @@
+- title: Common Profile
+  content: |-
+   Minimal example - empty except for example of profiled element using this profile rules.
+
+   This example uses the NZ profile, and validates it only against the common ICSM profile requirements.
+
+#  snippets:
+#    - language: json
+#      ref: ../nz/example.json
+#      base-uri: http://www.example.com/features/
+#      shacl-closure:
+#        - ../../vocabularies/SurveyPoints/condition/nz-condition.csv.ttl
+#        - ../../vocabularies/SurveyPoints/monument/nz-monument-type.csv.ttl
+#        - ../../vocabularies/SurveyPoints/state/nz-state.csv.ttl

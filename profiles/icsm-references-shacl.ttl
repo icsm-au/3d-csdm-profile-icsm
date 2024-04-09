@@ -1,0 +1,41 @@
+@prefix commonpatterns:         <https://linked.data.gov.au/def/csdm/commonpatterns/> .
+@prefix csd:                    <https://linked.data.gov.au/def/csdm/csd/> .
+@prefix container:              <https://linked.data.gov.au/def/csdm/container/> .
+@prefix dcterms:                <http://purl.org/dc/terms/> .
+@prefix geojson:                <https://purl.org/geojson/vocab#> .
+@prefix nz-monument-condition:  <https://linked.data.gov.au/def/csdm/nz-monument-condition/> .
+@prefix nz-monument-form:       <https://linked.data.gov.au/def/csdm/nz-monument-form/> .
+@prefix nz-monument-state:      <https://linked.data.gov.au/def/csdm/nz-monument-state/> .
+@prefix nz-surveypoint-purpose: <https://linked.data.gov.au/def/csdm/nz-surveypointpurpose/> .
+@prefix prov:                   <http://www.w3.org/ns/prov#> .
+@prefix rdf:                    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:                   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix registered-surveyors:   <https://example.gov.nz/surveyors/> .
+@prefix sosa:                   <http://www.w3.org/ns/sosa/> .
+@prefix surv:                   <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
+@prefix surveyreg-nz:           <https://surveys-nz/> .
+@prefix termtype:               <https://linked.data.gov.au/def/csdm/termtypes/> .
+@prefix xsd:                    <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:                     <http://www.w3.org/ns/shacl#> .
+@prefix :                       <https://linked.data.gov.au/def/csdm/rules/icsm/crs/> .
+
+
+:referencedCSDs-present
+    a                   sh:NodeShape ;
+    sh:targetSubjectsOf surv:fromSurvey ;
+    sh:message          "CSDs referenced from survey must exist - either the current survey or an object in the referencedCSDs list" ;
+    sh:name             "CSD reference valid" ;
+    sh:sparql           [ sh:select """
+      PREFIX geojson: <https://purl.org/geojson/vocab#>
+      PREFIX  surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/>
+      PREFIX container: <https://linked.data.gov.au/def/csdm/container/>
+      SELECT $this (surv:fromSurvey as ?path) ?value
+      WHERE {
+        $this surv:fromSurvey ?value .
+        FILTER NOT EXISTS {
+          OPTIONAL { ?survey container:referencedCSD ?value  }
+          OPTIONAL { ?value a container:CSD }
+      }
+      }
+    """ ; ]
+.

@@ -1,0 +1,8 @@
+- title: 3D survey example
+  content: |-
+   CSD with 3D parcels and observations.
+
+  # snippets:
+  #  - language: json
+  #    ref: example.json
+  #    base-uri: http://www.example.com/3dfeatures/

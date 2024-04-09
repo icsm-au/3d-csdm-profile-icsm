@@ -1,0 +1,41 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix vocabs: <https://linked.data.gov.au/def/csdm/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vocabs:icsm-admin-unit-type rdfs:label "Administration Unit Type" .
+
+vocabs:icsm-angle-type rdfs:label "Angle Type" .
+
+vocabs:icsm-arc-orientation rdfs:label "Arc Orientation" .
+
+vocabs:icsm-distance-type rdfs:label "Distance Type" .
+
+vocabs:icsm-monument-condition rdfs:label "ICSM Monument Condition" .
+
+vocabs:icsm-parcel-state rdfs:label "ICSM Parcel State" .
+
+vocabs:icsm-procedure-used rdfs:label "Survey Procedure" .
+
+vocabs:icsm-survey-purpose rdfs:label "Survey Purpose - ICSM Common" .
+
+vocabs:icsm-survey-type rdfs:label "Survey Type - ICSM Common" .
+
+vocabs:icsm-surveypoint-purpose rdfs:label "Survey Point Purpose - ICSM Common" .
+
+[] a prov:Activity ;
+    prov:endedAtTime "2024-02-04T06:23:50.927127"^^xsd:dateTime ;
+    prov:startedAtTime "2024-02-04T06:23:50.910700"^^xsd:dateTime ;
+    prov:used [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:0f32332d11a6cc8231abe9ed2a14e854258b41a0" ;
+            rdfs:seeAlso <file:///home/runner/work/3d-csdm-profiles/3d-csdm-profiles/profiles/icsm-vocab-labels.csv> ] ;
+    prov:wasAssociatedWith [ a prov:Agent,
+                schema:SoftwareApplication ;
+            rdfs:label "OGC-NA tools" ;
+            dct:hasVersion "0.3.35" ;
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
+    prov:wasInformedBy [ dct:identifier "d6d0e2d7-4f80-4e92-8329-efda53896ae2" ] .
+

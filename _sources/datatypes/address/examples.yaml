@@ -1,0 +1,31 @@
+- title: Example Address With Street
+  content: |-
+   A simple address with street number
+
+  snippets:
+    - language: json
+      code: |
+        {
+              "propertyNumber": "4",
+              "streetName": "Clarendon",
+              "streetType": "St",
+              "locality": "Maidstone",
+              "state": "VIC",
+              "postCode": "3012",
+              "country": "Australia"
+        }
+
+- title: Example Address with PO Box
+  content: |-
+   A simple address with PO box
+
+  snippets:
+    - language: json
+      code: |
+        {
+              "postOfficeBoxNumber": "4334",
+              "locality": "Maidstone",
+              "state": "VIC",
+              "postCode": "3012",
+              "country": "Australia"
+        }

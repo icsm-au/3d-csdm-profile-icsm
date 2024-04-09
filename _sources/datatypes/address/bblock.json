@@ -1,0 +1,20 @@
+{
+  "name": "ICSM Address (Placeholder)",
+  "abstract": "A simple implementation of ICSM address model. Can be mapped to or replaced by a standard ICSM schema when available.",
+  "status": "under-development",
+  "dateTimeAddition": "2024-01-15T00:00:00Z",
+  "itemClass": "schema",
+  "register": "icsm-csdm",
+  "version": "0.1",
+  "dateOfLastChange": "2024-01-15",
+  "link": "https://github.com/icsm-au/3d-csdm-schema",
+  "sources": [
+    {
+      "title": "CSDM model",
+      "link": "https://github.com/icsm-au/3d-csdm"
+    }
+  ],
+  "maturity": "development",
+  "scope": "placeholder",
+  "tags": ["utils", "address","ICSM"]
+}

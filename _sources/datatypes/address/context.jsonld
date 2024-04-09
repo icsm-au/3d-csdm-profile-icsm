@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "sdo": "https://schema.org/",
+    "ads": "https:/icsm.org.au/placeholder/address/",
+    "address": "sdo:address",
+    "propertyNumber": {
+      "@id": "ad:propertyNumber"
+    },
+    "streetName": {
+      "@id": "ad:streetName"
+    },
+    "streetType": {
+      "@id": "ad:streetType"
+    },
+    "locality": {
+      "@id": "sdo:addressLocality"
+    },
+    "postOfficeBoxNumber": "sdo:postOfficeBoxNumber",
+    "state": {
+      "@id": "sdo:addressRegion"
+    },
+    "postCode": {
+      "@id": "sdo:postalCode"
+    },
+    "country": {
+      "@id": "sdo:addressCountry"
+    }
+  }
+}

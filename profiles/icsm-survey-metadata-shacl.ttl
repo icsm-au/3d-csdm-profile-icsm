@@ -1,0 +1,110 @@
+@prefix commonpatterns: <https://linked.data.gov.au/def/csdm/commonpatterns/> .
+@prefix csd:            <https://linked.data.gov.au/def/csdm/csd/> .
+@prefix container:      <https://linked.data.gov.au/def/csdm/container/> .
+@prefix dcterms:        <http://purl.org/dc/terms/> .
+@prefix geojson:        <https://purl.org/geojson/vocab#> .
+@prefix oa:             <http://www.w3.org/ns/oa#> .
+@prefix prov:           <http://www.w3.org/ns/prov#> .
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa:           <http://www.w3.org/ns/sosa/> .
+@prefix surv:           <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
+@prefix surveyreg-nz:   <https://surveys-nz/> .
+@prefix termtype:       <https://linked.data.gov.au/def/csdm/termtypes/> .
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:             <http://www.w3.org/ns/shacl#> .
+@prefix :               <https://linked.data.gov.au/def/csdm/rules/icsm/crs/> .
+@prefix oa:             <http://www.w3.org/ns/oa#> .
+@prefix prof:           <http://www.w3.org/ns/dx/prof/> .
+
+:testSurveyMetadata
+    a                   sh:NodeShape ;
+    sh:targetSubjectsOf container:surveyType ;
+    sh:targetClass      container:CSD ;
+    sh:description      "Surveys have a mandatory type, so as a subject this is a surrogate for a container:CSD class. Other shapes may able to nested objects and are more generally applied." ;
+    sh:property         [ sh:path     container:purpose ;
+                          sh:message  "Survey Purpose is registered value" ;
+                          sh:name     "Survey Purpose valid" ;
+                          sh:class    surv:SurveyPurpose ;
+                          sh:minCount 1 ] ;
+    sh:property         [ sh:path     container:surveyType ;
+                          sh:message  "Survey Type is registered value" ;
+                          sh:name     "Survey Type valid" ;
+                          sh:class    termtype:SurveyType ;
+                          sh:minCount 1 ] ;
+    sh:property         [ sh:path     ( container:adminUnit prof:hasRole ) ;
+                          sh:message  "AdminUnit Type must be a registered type" ;
+                          sh:name     "AdminUnit Type" ;
+                          sh:class    termtype:AdminUnitType ;
+                          sh:minCount 1 ] ;
+    sh:property         [ sh:path     ( container:adminUnit oa:hasTarget ) ;
+                          sh:message  "AdminUnit Value must match profile" ;
+                          sh:name     "AdminUnit Value" ;
+                          sh:class    termtype:AdminUnit ;
+                          sh:minCount 1 ] ;
+    sh:property         [ sh:path    ( container:supportingDocuments prof:hasRole ) ;
+                          sh:message "Supporting Document Role must be a registered type" ;
+                          sh:name    "Supporting Document Role" ;
+                          sh:class   termtype:DocType ; ] ;
+    sh:property         [ sh:path    ( container:annotations prof:hasRole ) ;
+                          sh:message "Annotation Document Role must be a registered type" ;
+                          sh:name    "Annotation Document Role" ;
+                          sh:class   termtype:Annotation ; ] ;
+.
+
+termtype:SurveyType rdfs:label "Localised Survey Type" .
+termtype:Annotation rdfs:label "Localised Annotation Role" .
+termtype:DocType rdfs:label "Localised Document Type" .
+termtype:AdminUnitType rdfs:label "Localised Administrative Unit Type" .
+termtype:AdminUnit rdfs:label "Local Administrative Unit" .
+termtype:AllowableCoordinateReferenceSystem rdfs:label  "Allowed CRS" .
+termtype:Distance rdfs:label "Distance Type" .
+termtype:Distance rdfs:label "Angle Type" .
+
+:testCRS
+    a                   sh:NodeShape ;
+    sh:targetSubjectsOf container:horizontalCRS ;
+    sh:message          "CRS is not registered in current profile or CRS details not present in configured Test environment" ;
+    sh:name             "CRS valid" ;
+    sh:property         [ sh:path  container:horizontalCRS ;
+                          sh:class termtype:AllowableCoordinateReferenceSystem ]
+.
+
+
+:testCompoundCRS
+    a                   sh:NodeShape ;
+    sh:targetSubjectsOf container:compoundCRS ;
+    sh:message          "Compound CRS is not registered in current profile or CRS details not present in configured Test environment" ;
+    sh:name             "Compound CRS valid" ;
+    sh:property         [ sh:path  container:horizontalCRS ;
+                          sh:class termtype:AllowableCoordinateReferenceSystem ]
+.
+
+:testVHD
+    a                   sh:NodeShape ;
+    sh:targetSubjectsOf container:verticalDatum ;
+    sh:message          "Vertical Datum is not registered in current profile or CRS details not present in configured Test environment" ;
+    sh:name             "Vertical Datum valid" ;
+    sh:property         [ sh:path  container:verticalDatum ;
+                          sh:class termtype:AllowableCoordinateReferenceSystem ]
+.
+
+
+:testDistanceType
+    a                   sh:NodeShape ;
+    sh:targetSubjectsOf surv:distanceType ;
+    sh:message          "DistanceType is not registered in current profile or details not present in configured Test environment" ;
+    sh:name             "DistanceType valid" ;
+    sh:property         [ sh:path  surv:distanceType ;
+                          sh:class termtype:Distance ]
+.
+
+:testAngleType
+    a                   sh:NodeShape ;
+    sh:targetSubjectsOf surv:angleType ;
+    sh:message          "AngleType is not registered in current profile or details not present in configured Test environment" ;
+    sh:name             "AngleType valid" ;
+    sh:property         [ sh:path  surv:AngleType ;
+                          sh:class termtype:Angle ]
+.
+

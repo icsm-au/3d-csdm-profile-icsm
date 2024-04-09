@@ -1,0 +1,76 @@
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:        <http://www.w3.org/ns/shacl#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix geojson:   <https://purl.org/geojson/vocab#> .
+@prefix sosa:      <http://www.w3.org/ns/sosa/> .
+@prefix surv:      <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
+@prefix survobs:   <https://linked.data.gov.au/def/csdm/surveyobs/> .
+@prefix container: <https://linked.data.gov.au/def/csdm/container/> .
+@prefix :          <http://example.com/rules> .
+
+:testInCollectionOrMember-madeBySensor-Dies-in-rdflib
+    a           sh:NodeShape ;
+    # sh:targetSubjectsOf sosa:hasResult, sosa:hasSimpleResult ;
+    # sh:targetClass      sosa:Observation ;
+    sh:message  "Sensor details must be present in Observation or containing collection." ;
+    sh:name     "sensor present" ;
+    sh:property [ sh:path     ( [ sh:zeroOrMorePath [ sh:inversePath [ sh:alternativePath
+                                                                               ( geojson:features sosa:hasMember ) ] ] ]
+                                sosa:madeBySensor ) ;
+                  sh:minCount 1 ;
+                  sh:maxCount 1 ; ] ;
+.
+
+
+
+:testInCollectionOrMember-madeBySensor
+    a                   sh:NodeShape ;
+    sh:targetSubjectsOf sosa:hasResult, sosa:hasSimpleResult ;
+    sh:targetClass      sosa:Observation ;
+    sh:message          "Sensor details must be present in Observation or containing collection." ;
+    sh:name             "sensor present" ;
+    sh:property         [ sh:path     ( [ sh:zeroOrMorePath [ sh:inversePath sosa:hasMember ] ] sosa:madeBySensor ) ;
+                          sh:minCount 1 ;
+                          sh:maxCount 1 ; ] ;
+.
+
+:testInCollectionOrMember-procedure
+    a                   sh:NodeShape ;
+    sh:targetsubjectsOf sosa:usedProcedure ;
+    sh:targetClass      sosa:Observation, sosa:ObservationCollection ;
+    sh:message          "Procedure matches term in vocabulary closure marked as a sosa:Procedure" ;
+    sh:name             "procedure value" ;
+    sh:property         [ sh:path     sosa:usedProcedure ;
+                          sh:Class    sosa:Procedure ] ;
+.
+
+
+:bindSurveyObservation-angle-and-distance-types
+    a                   sh:NodeShape ;
+    sh:targetSubjectsOf survobs:angleType, survobs:distanceType ;
+    sh:targetClass      surv:SurveyVectorObservation ;
+    sh:name             "Angle Type" ;
+    sh:property         [ sh:message  "Angle Type is a code" ;
+                          sh:path     survobs:angleType ;
+                          sh:nodeKind sh:IRI ;
+                          sh:maxCount 1 ; ] ;
+    sh:property         [ sh:message  "Distance Type is a code" ;
+                          sh:path     survobs:distanceType ;
+                          sh:nodeKind sh:IRI ;
+                          sh:maxCount 1 ; ] ;
+.
+
+:annotate-madeBySensor
+    a                  sh:NodeShape ;
+    sh:targetClass     sosa:ObservationCollection ;
+    sh:targetObjectsOf container:vectorObservations ;
+    sh:message         "Sensor details must be present in Observation Collection." ;
+    sh:property        [ sh:path     sosa:madeBySensor ;
+                         sh:name     "Made By Sensor" ;
+                         sh:minCount 1 ; ] ;
+.
+
+
+
+

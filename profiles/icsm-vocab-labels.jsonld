@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "policy": "http://www.opengis.net/def/metamodel/ogc-na/",
+    "surv": "https://linked.data.gov.au/def/csdm/surveyfeatures/",
+    "surveyobs": "https://linked.data.gov.au/def/csdm/surveyobs/",
+    "sosa": "http://www.w3.org/ns/sosa",
+    "container": "https://linked.data.gov.au/def/csdm/container/",
+    "termtype": "https://linked.data.gov.au/def/csdm/termtypes/",
+    "parcel": "https://linked.data.gov.au/def/csdm/parcels/",
+    "qb": "http://purl.org/linked-data/cube#",
+    "vocabs": "https://linked.data.gov.au/def/csdm/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "Scheme": "@id",
+    "Label": "rdfs:label"
+  },
+  "@graph": [
+    {
+      "Scheme": "vocabs:icsm-procedure-used",
+      "Label": "Survey Procedure"
+    },
+    {
+      "Scheme": "vocabs:icsm-distance-type",
+      "Label": "Distance Type"
+    },
+    {
+      "Scheme": "vocabs:icsm-angle-type",
+      "Label": "Angle Type"
+    },
+    {
+      "Scheme": "vocabs:icsm-arc-orientation",
+      "Label": "Arc Orientation"
+    },
+    {
+      "Scheme": "vocabs:icsm-admin-unit-type",
+      "Label": "Administration Unit Type"
+    },
+    {
+      "Scheme": "vocabs:icsm-parcel-state",
+      "Label": "ICSM Parcel State"
+    },
+    {
+      "Scheme": "vocabs:icsm-monument-condition",
+      "Label": "ICSM Monument Condition"
+    },
+    {
+      "Scheme": "vocabs:icsm-surveypoint-purpose",
+      "Label": "Survey Point Purpose - ICSM Common"
+    },
+    {
+      "Scheme": "vocabs:icsm-survey-purpose",
+      "Label": "Survey Purpose - ICSM Common"
+    },
+    {
+      "Scheme": "vocabs:icsm-survey-type",
+      "Label": "Survey Type - ICSM Common"
+    }
+  ]
+}

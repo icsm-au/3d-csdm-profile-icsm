@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "icsm": "https://linked.data.gov.au/def/csdm/",
+    "epsg": "http://www.opengis.net/def/crs/EPSG/0/",
+    "surveytype": "icsm:surveytypes/",
+    "icsm-jurisdictions": "icsm:jurisdictions/",
+    "surveyable": "icsm:observedProperties/",
+    "surveyproc": "icsm:icsm-procedure-used/",
+    "icsm-survey-type": "icsm:icsm-survey-type/",
+    "survptpurp": "icsm:survptpurp/",
+    "surv": "https://linked.data.gov.au/def/csdm/surveyfeatures/",
+    "icsm-admin-unit-type": "icsm:icsm-admin-unit-type/",
+    "icsm-procedure-used": "icsm:icsm-procedure-used/",
+    "icsm-surveypoint-purpose": "icsm:icsm-surveypoint-purpose/",
+    "icsm-parcel-state": "icsm:icsm-parcel-state/",
+    "icsm-angle-type": "icsm:icsm-angle-type/",
+    "icsm-equipment-type": "icsm:icsm-equipment-type/",
+    "icsm-distance-type": "icsm:icsm-distance-type/",
+    "icsm-arc-orientation": "icsm:arc-orientation/",
+    "sensorType": {
+      "@type": "@id",
+      "@id": "surv:sensorType"
+    },
+    "sensorRole": {
+      "@type": "@id",
+      "@id": "surv:sensorRole"
+    },
+    "lastCalibrated": "surv:lastCalibrated"
+  }
+}

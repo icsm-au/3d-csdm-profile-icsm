@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "icsm-address": {
+      "allOf": [
+        {
+          "additionalProperties": false,
+          "properties": {
+            "propertyNumber": {
+              "type": "string"
+            },
+            "unitNumber": {
+              "type": "string"
+            },
+            "streetName": {
+              "type": "string"
+            },
+            "streetType": {
+              "type": "string"
+            },
+            "locality": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "postOfficeBoxNumber": {
+              "type": "string"
+            },
+            "postCode": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "postCode",
+            "state"
+          ]
+        },
+        {
+          "anyOf": [
+            {
+              "required": [
+                "streetName",
+                "locality"
+              ]
+            },
+            {
+              "required": [
+                "postOfficeBoxNumber",
+                "state"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "streetAddress": {
+      "allOf": [
+        {
+          "$ref": "#$defs/icsm-address"
+        },
+        {
+          "required": [
+            "streetName"
+          ]
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/$defs/icsm-address"
+    }
+  ]
+}

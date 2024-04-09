@@ -1,0 +1,120 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "policy": "http://www.opengis.net/def/metamodel/ogc-na/",
+    "surv": "https://linked.data.gov.au/def/csdm/surveyfeatures/",
+    "surveyobs": "https://linked.data.gov.au/def/csdm/surveyobs/",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "container": "https://linked.data.gov.au/def/csdm/container/",
+    "termtype": "https://linked.data.gov.au/def/csdm/termtypes/",
+    "parcel": "https://linked.data.gov.au/def/csdm/parcels/",
+    "qb": "http://purl.org/linked-data/cube#",
+    "vocabs": "https://linked.data.gov.au/def/csdm/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "Classes": {
+      "@type": "@id",
+      "@id": "sh:targetClass"
+    },
+    "Property": "@id",
+    "Range": {
+      "@type": "@id",
+      "@id": "rdfs:range"
+    },
+    "Schemes": {
+      "@type": "@id",
+      "@id": "qb:codeList"
+    },
+    "Label": "rdfs:label"
+  },
+  "@graph": [
+    {
+      "Classes": [],
+      "Property": "sosa:usedProcedure",
+      "Range": "sosa:Procedure",
+      "Schemes": [
+        "vocabs:icsm-procedure-used"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [],
+      "Property": "surv:distanceType",
+      "Range": "surv:Distance",
+      "Schemes": [
+        "vocabs:icsm-distance-type"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [],
+      "Property": "surv:angleType",
+      "Range": "surv:Angle",
+      "Schemes": [
+        "vocabs:icsm-angle-type"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "container:CSD"
+      ],
+      "Property": "container:surveyType",
+      "Range": "termtype:SurveyType",
+      "Schemes": [
+        "vocabs:icsm-survey-type"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [],
+      "Property": "container:adminUnit",
+      "Range": "termtype:AdminUnit",
+      "Schemes": [
+        "vocabs:icsm-admin-unit-type"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "parcel:Parcel"
+      ],
+      "Property": "parcel:state",
+      "Range": "termtype:ParcelState",
+      "Schemes": [
+        "vocabs:icsm-parcel-state"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [],
+      "Property": "surv:condition",
+      "Range": "surv:ConditionCode",
+      "Schemes": [
+        "vocabs:icsm-monument-condition"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [
+        "sosa:ObservationCollection"
+      ],
+      "Property": "sosa:usedProcedure",
+      "Range": "sosa:Procedure",
+      "Schemes": [
+        "vocabs:icsm-procedure-used"
+      ],
+      "@type": "qb:CodedProperty"
+    },
+    {
+      "Classes": [],
+      "Property": "surv:purpose",
+      "Range": "surv:SurveyPointPurpose",
+      "Schemes": [
+        "vocabs:icsm-surveypoint-purpose"
+      ],
+      "@type": "qb:CodedProperty"
+    }
+  ]
+}
