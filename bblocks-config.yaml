@@ -24,4 +24,4 @@ description: |
 
 imports:
   - default
-  - https://icsm-au.github.io/3d-csdm-schema/build/register.json
+  - https://icsm-au.github.io/3d-csdm-common/build/register.json
