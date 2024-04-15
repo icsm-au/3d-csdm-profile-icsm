@@ -19,7 +19,11 @@
   "@graph": [
     {
       "Scheme": "vocabs:icsm-procedure-used",
-      "Label": "Survey Procedure"
+      "Label": "Survey Procedure  - ICSM Common"
+    },
+    {
+      "Scheme": "vocabs:icsm-equipment-type",
+      "Label": "Equipment Type - ICSM Common"
     },
     {
       "Scheme": "vocabs:icsm-distance-type",
@@ -28,10 +32,6 @@
     {
       "Scheme": "vocabs:icsm-angle-type",
       "Label": "Angle Type"
-    },
-    {
-      "Scheme": "vocabs:icsm-arc-orientation",
-      "Label": "Arc Orientation"
     },
     {
       "Scheme": "vocabs:icsm-admin-unit-type",
