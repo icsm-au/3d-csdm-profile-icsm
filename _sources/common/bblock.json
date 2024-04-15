@@ -1,6 +1,6 @@
 {
   "name": "Cadastral Survey Common ICSM Profile",
-  "abstract": "Building block for testing common rules for ICSM Cadastral Survey Data Model. These are rules that are not enforced in the schema so that potential reuse in other jurisdictions is possible.",
+  "abstract": "Common profile of the Cadastral Survey Data Model. All ICSM jurisdiction profiles will inherit schemas, rules and vocabulary bindings from this profile, ensuring consistency and minimising effort and complexity of jurisdictional profile specification.",
   "status": "under-development",
   "dateTimeAddition": "2023-07-31T00:00:00Z",
   "itemClass": "schema",

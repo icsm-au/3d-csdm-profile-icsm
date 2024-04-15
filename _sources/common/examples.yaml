@@ -1,8 +1,8 @@
 - title: Common Profile
   content: |-
-   Minimal example - empty except for example of profiled element using this profile rules.
+   Examples are provided in specific jurisdictional profiles. 
 
-   This example uses the NZ profile, and validates it only against the common ICSM profile requirements.
+   See also the [ICSM address component](https://icsm-au.github.io/3d-csdm-profile-icsm/bblock/icsm.profiles.datatypes.address/examples)
 
 #  snippets:
 #    - language: json
