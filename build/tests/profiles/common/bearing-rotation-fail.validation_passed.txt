@@ -1,5 +1,5 @@
 Validation report for icsm.profiles.common - Cadastral Survey Common ICSM Profile
-Generated 2024-04-15T06:42:12.903218+00:00
+Generated 2024-04-15T07:01:39.698767+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -45,6 +45,37 @@ On instance:
 === End JSON Schema ===
 
 === SHACL ===
+Validation result for profiles/icsm-observation-properties.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for profiles/icsm-observation-properties.shacl:
+ - Shape :testInCollectionOrMember-procedure: *none*
+ - Shape :testInCollectionOrMember-madeBySensor-Dies-in-rdflib: *none*
+ - Shape :bindSurveyObservation-angle-and-distance-types: *none*
+ - Shape :annotate-madeBySensor: *none*
+ - Shape :testInCollectionOrMember-madeBySensor: *none*
+
+Validation result for profiles/icsm-point-codetypes-shacl.ttl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for profiles/icsm-point-codetypes-shacl.ttl:
+ - Shape jcl:testBoundVocab-vector-purpose: *none*
+ - Shape jcl:testBoundVocab-condition: *none*
+ - Shape jcl:testBoundVocab-form: *none*
+ - Shape jcl:testBoundVocab-pt-quality-class: *none*
+ - Shape jcl:testBoundVocab-state: *none*
+ - Shape jcl:testBoundVocab-surveypoint-purpose: *none*
+
+Validation result for profiles/icsm-parcel-codetypes-shacl.ttl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for profiles/icsm-parcel-codetypes-shacl.ttl:
+ - Shape jcl:testBoundVocab-parcelType: *none*
+ - Shape jcl:testBoundVocab-parcelInterest: *none*
+
 
 ** Validation error **
 Validation result for profiles/icsm-survey-metadata-shacl.ttl:
@@ -79,23 +110,12 @@ Validation result for profiles/icsm-survey-metadata-shacl.ttl:
   	Message: AdminUnit Value must match profile
   
 Focus nodes for profiles/icsm-survey-metadata-shacl.ttl:
- - Shape :testSurveyMetadata: <file:///github/workspace/DP_572532>
  - Shape :testCRS: <file:///github/workspace/DP_572532>
  - Shape :testCompoundCRS: *none*
- - Shape :testVHD: *none*
- - Shape :testDistanceType: *none*
  - Shape :testAngleType: *none*
-
-Validation result for profiles/icsm-observation-properties.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for profiles/icsm-observation-properties.shacl:
- - Shape :testInCollectionOrMember-madeBySensor: *none*
- - Shape :testInCollectionOrMember-procedure: *none*
- - Shape :bindSurveyObservation-angle-and-distance-types: *none*
- - Shape :testInCollectionOrMember-madeBySensor-Dies-in-rdflib: *none*
- - Shape :annotate-madeBySensor: *none*
+ - Shape :testSurveyMetadata: <file:///github/workspace/DP_572532>
+ - Shape :testDistanceType: *none*
+ - Shape :testVHD: *none*
 
 Validation result for profiles/icsm-references-shacl.ttl:
   Validation Report
@@ -103,26 +123,6 @@ Validation result for profiles/icsm-references-shacl.ttl:
   
 Focus nodes for profiles/icsm-references-shacl.ttl:
  - Shape :referencedCSDs-present: *none*
-
-Validation result for profiles/icsm-parcel-codetypes-shacl.ttl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for profiles/icsm-parcel-codetypes-shacl.ttl:
- - Shape jcl:testBoundVocab-parcelInterest: *none*
- - Shape jcl:testBoundVocab-parcelType: *none*
-
-Validation result for profiles/icsm-point-codetypes-shacl.ttl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for profiles/icsm-point-codetypes-shacl.ttl:
- - Shape jcl:testBoundVocab-pt-quality-class: *none*
- - Shape jcl:testBoundVocab-condition: *none*
- - Shape jcl:testBoundVocab-vector-purpose: *none*
- - Shape jcl:testBoundVocab-surveypoint-purpose: *none*
- - Shape jcl:testBoundVocab-form: *none*
- - Shape jcl:testBoundVocab-state: *none*
 
 === End SHACL ===
 

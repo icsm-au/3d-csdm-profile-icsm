@@ -30,11 +30,11 @@
   "superBBlock": false,
   "shaclRules": {
     "icsm.profiles.common": [
-      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
-      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
+      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
       "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl",
-      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
-      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl"
+      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
+      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
+      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl"
     ]
   },
   "shaclClosures": [
@@ -75,7 +75,7 @@
   "sourceFiles": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/common/",
   "validationPassed": true,
   "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/common/",
-  "description": "## Cadastral Survey Data Model - ICSM common\n\nRules and default namespace bindings for ICSM Jurisdiction Profiles of the Cadastral Survey Data Model (CSDM).\n\nThe ICSM profiles defines an Address schema for annotation of Parcel objects, and a set of vocabularies where the ICSM Cadastral Survey Working Group have identified common terminology and semantics (meaning).\n\nIndividual jurisdictions can define a profile of this profile, to enforce use of both the common model and the common ICSM content standards.\n\n",
+  "description": "## Cadastral Survey Data Model - ICSM common\n\nRules and default namespace bindings for ICSM Jurisdiction Profiles of the Cadastral Survey Data Model (CSDM).\n\nThe ICSM profiles defines an Address schema for annotation of Parcel objects, and a set of vocabularies where the ICSM Cadastral Survey Working Group have identified common terminology and semantics (meaning).\n\nIndividual jurisdictions can define one or more specific profiles of the ICSM profile for different applications, using this as a base profile enforces use of both the common model and the common ICSM content standards.\n\n",
   "examples": [
     {
       "title": "Common Profile",

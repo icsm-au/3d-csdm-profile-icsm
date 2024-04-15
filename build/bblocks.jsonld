@@ -106,7 +106,7 @@
   "name": "Building Blocks - Implementation Profiles for 3D CSDM",
   "abstract": "This repository contains the \n [ICSM](bblock/icsm.profiles.common) - Aus/NZ Intergovernmental Committee on Survey and Mapping Common (ANZLIC ICSM) profile of the [Cadastral Survey Data Exchange standard](https://icsm-au.github.io/3d-csdm-schema/). It is implemented by a further set of jurisdiction specific profiles using local vocabulary (codelists) and any additional content and rules necessary.\n \nThe profile is defined using the [OGC Building Blocks methodology](https://ogcincubator.github.io/bblocks-docs/).\n",
   "description": "Each jurisdiction profile extends a [common ICSM profile] of a potentially universal [model of 3D cadastre](https://icsm-au.github.io/3d-csdm-model/), and a [JSON schema](https://icsm-au.github.io/3d-csdm-common/).\n\nImplementation Profiles (e.g. for each Jurisdiction) use the same documentation form as the common model, but extended with specific constraints and vocabulary usages.\n\nThis profile is thus compatible with the [OGC API Features](https://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-main.html) data exchange specification, and can be implemented by any standards compliant software capable of handling nested object sub-schemas and control of codelist in content.\n\ne.g. [Victoria (Australian state) Profile](https://icsm-au.github.io/3d-csdm/docs/vic-profile/)\n\n_The **[REVIEW GUIDE](https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/REVIEW_GUIDE.md)** provides a detailed overview of all aspects of the design and testing process, and related materials._\n\nThe relationships of this profile to specific jurisdictional profiles and and the underlying  common model are shown below:\n\n![](https://lucid.app/publicSegments/view/f7e6c029-db67-4186-9592-cab6ec3437d0/image.png)\n",
-  "modified": "2024-04-15T06:39:58.652620",
+  "modified": "2024-04-15T06:59:24.887054",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"32e803263591dfa42fd4a83c5a75b4efed7108b7",
@@ -343,11 +343,11 @@
       "superBBlock": false,
       "shaclRules": {
         "icsm.profiles.common": [
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl"
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl"
         ]
       },
       "shaclClosures": [

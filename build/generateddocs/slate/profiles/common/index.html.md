@@ -37,7 +37,7 @@ Rules and default namespace bindings for ICSM Jurisdiction Profiles of the Cadas
 
 The ICSM profiles defines an Address schema for annotation of Parcel objects, and a set of vocabularies where the ICSM Cadastral Survey Working Group have identified common terminology and semantics (meaning).
 
-Individual jurisdictions can define a profile of this profile, to enforce use of both the common model and the common ICSM content standards.
+Individual jurisdictions can define one or more specific profiles of the ICSM profile for different applications, using this as a base profile enforces use of both the common model and the common ICSM content standards.
 
 
 # Examples
@@ -1653,11 +1653,11 @@ You can find the full JSON-LD context here:
 The following sets of SHACL shapes are used for validating this building block:
 
 * Cadastral Survey Common ICSM Profile <small><code>icsm.profiles.common</code></small>
-  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl)
-  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl)
-  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl)
-  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl)
   * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl)
+  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl)
+  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl)
+  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl)
+  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl)
 
 # References
 
