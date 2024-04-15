@@ -34,8 +34,8 @@
     "application/yaml": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/icsm-3d/schema.yaml",
     "application/json": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/icsm-3d/schema.json"
   },
-  "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-3d/context.jsonld",
   "sourceSchema": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-3d/schema.json",
+  "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-3d/context.jsonld",
   "sourceFiles": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-3d/",
   "validationPassed": false,
   "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/icsm-3d/",

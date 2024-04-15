@@ -34,8 +34,8 @@
     "application/yaml": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/icsm-2d/schema.yaml",
     "application/json": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/icsm-2d/schema.json"
   },
-  "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-2d/context.jsonld",
   "sourceSchema": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-2d/schema.json",
+  "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-2d/context.jsonld",
   "sourceFiles": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-2d/",
   "validationPassed": true,
   "description": "## Cadastral Survey Data Model - ICSM common\n\nRules and default namespace bindings for ICSM Jurisdiction Profiles of the Cadastral Survey Data Model (CSDM)\n\n",

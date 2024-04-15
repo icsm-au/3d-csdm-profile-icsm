@@ -31,10 +31,10 @@
   "shaclRules": {
     "icsm.profiles.common": [
       "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
-      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl",
       "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
+      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
       "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
-      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl"
+      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl"
     ]
   },
   "shaclClosures": [
@@ -70,8 +70,8 @@
     "application/yaml": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/schema.yaml",
     "application/json": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/schema.json"
   },
-  "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/common/context.jsonld",
   "sourceSchema": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/common/schema.json",
+  "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/common/context.jsonld",
   "sourceFiles": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/common/",
   "validationPassed": true,
   "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/common/",

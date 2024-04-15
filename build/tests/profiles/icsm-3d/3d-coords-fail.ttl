@@ -30,10 +30,10 @@ eg1:Western-Australia-Example-1 a container:CSD,
 eg1:9540 a surv:CadastralMark,
         geojson:Feature ;
     rdfs:label [ rdfs:label "EFB157243/9540" ;
-            dct:hasPart [ rdfs:label "9540" ;
-                    commonpatterns:namePartType "Stamp" ],
-                [ rdfs:label "EFB157243" ;
-                    commonpatterns:namePartType "Source" ] ] ;
+            dct:hasPart [ rdfs:label "EFB157243" ;
+                    commonpatterns:namePartType "Source" ],
+                [ rdfs:label "9540" ;
+                    commonpatterns:namePartType "Stamp" ] ] ;
     surv:monumentedBy [ surv:condition wa-monument-condition:ok ;
             surv:form wa-monument-form:Spike ;
             surv:state wa-monument-state:MarkFound ] ;

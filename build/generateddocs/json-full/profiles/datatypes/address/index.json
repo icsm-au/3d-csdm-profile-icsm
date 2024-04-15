@@ -30,8 +30,8 @@
     "application/yaml": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.yaml",
     "application/json": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.json"
   },
-  "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/datatypes/address/context.jsonld",
   "sourceSchema": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/datatypes/address/schema.json",
+  "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/datatypes/address/context.jsonld",
   "sourceFiles": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/datatypes/address/",
   "validationPassed": true,
   "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/datatypes/address/",

@@ -1654,10 +1654,10 @@ The following sets of SHACL shapes are used for validating this building block:
 
 * Cadastral Survey Common ICSM Profile <small><code>icsm.profiles.common</code></small>
   * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl)
-  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl)
   * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl)
-  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl)
   * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl)
+  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl)
+  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl)
 
 # References
 
