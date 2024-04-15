@@ -358,7 +358,7 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='cadastral-survey-common-icsm-profile-icsm-profiles-common'>Cadastral Survey Common ICSM Profile <code>icsm.profiles.common</code></h1>
-<p>Building block for testing common rules for ICSM Cadastral Survey Data Model. These are rules that are not enforced in the schema so that potential reuse in other jurisdictions is possible.</p>
+<p>Common profile of the Cadastral Survey Data Model. All ICSM jurisdiction profiles will inherit schemas, rules and vocabulary bindings from this profile, ensuring consistency and minimising effort and complexity of jurisdictional profile specification.</p>
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
@@ -369,11 +369,15 @@
 This building block is <strong><a href="https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/common/" target="_blank">valid</a></strong>
 </aside>
 <h1 id='description'>Description</h1><h2 id='cadastral-survey-data-model-icsm-common'>Cadastral Survey Data Model - ICSM common</h2>
-<p>Rules and default namespace bindings for ICSM Jurisdiction Profiles of the Cadastral Survey Data Model (CSDM)</p>
-<h1 id='examples'>Examples</h1><h2 id='common-profile'>Common Profile</h2>
-<p>Minimal example - empty except for example of profiled element using this profile rules.</p>
+<p>Rules and default namespace bindings for ICSM Jurisdiction Profiles of the Cadastral Survey Data Model (CSDM).</p>
 
-<p>This example uses the NZ profile, and validates it only against the common ICSM profile requirements.</p>
+<p>The ICSM profiles defines an Address schema for annotation of Parcel objects, and a set of vocabularies where the ICSM Cadastral Survey Working Group have identified common terminology and semantics (meaning).</p>
+
+<p>Individual jurisdictions can define a profile of this profile, to enforce use of both the common model and the common ICSM content standards.</p>
+<h1 id='examples'>Examples</h1><h2 id='common-profile'>Common Profile</h2>
+<p>Examples are provided in specific jurisdictional profiles. </p>
+
+<p>See also the <a href="https://icsm-au.github.io/3d-csdm-profile-icsm/bblock/icsm.profiles.datatypes.address/examples">ICSM address component</a></p>
 <h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
 <span class="na">description</span><span class="pi">:</span> <span class="s">Common ICSM profile of Cadastral Survey Data Model</span>
 <span class="na">allOf</span><span class="pi">:</span>
@@ -1973,11 +1977,11 @@ This building block is <strong><a href="https://github.com/icsm-au/3d-csdm-profi
 <li>Cadastral Survey Common ICSM Profile <small><code>icsm.profiles.common</code></small>
 
 <ul>
-<li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl</a></li>
-<li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl</a></li>
-<li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl</a></li>
 <li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl</a></li>
+<li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl</a></li>
 <li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl</a></li>
+<li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl</a></li>
+<li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl</a></li>
 </ul></li>
 </ul>
 <h1 id='references'>References</h1>

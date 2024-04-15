@@ -104,9 +104,9 @@
     }
   ],
   "name": "Building Blocks - Implementation Profiles for 3D CSDM",
-  "abstract": "This repository contains profiles of the [Cadastral Survey Data Exchange standard](https://icsm-au.github.io/3d-csdm-schema/), using the [OGC Building Blocks methodology](https://github.com/opengeospatial/bblock-template/blob/master/USAGE.md):\n\n- [New Zealand](bblock/icsm.profiles.nz)\n- [Victoria, Australia](bblock/icsm.profiles.vic)\n- [Western Australia](bblock/icsm.profiles.wa)\n- [ICSM]((bblock/icsm.profiles.common) - Aus/NZ Intergovernmental Committee on Survey and Mapping Common Profile\n",
-  "description": "Each jurisdiction profile extends a [common ICSM profile] of a potentially universal [model of 3D cadastre](https://icsm-au.github.io/3d-csdm/), and a [JSON schema](https://icsm-au.github.io/3d-csdm-schema/) compatible with the [OGC API Features](https://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-main.html) data exchange model.\n\nImplementation Profiles (e.g. for each Jurisdiction) use the same documentation form as the common model, but extended with specific constraints and vocabulary usages.\n\ne.g. [Victoria (Australian state) Profile](https://icsm-au.github.io/3d-csdm/docs/vic-profile/)\n\n_The **[REVIEW GUIDE](https://github.com/icsm-au/3d-csdm-profiles/blob/main/REVIEW_GUIDE.md)** provides a detailed overview of all aspects of the design and testing process, and related materials._\n\nThe relationships of these profiles and the underlying  common model is shown below:\n\n![](https://lucid.app/publicSegments/view/f7e6c029-db67-4186-9592-cab6ec3437d0/image.png)\n",
-  "modified": "2024-04-15T03:23:20.015979",
+  "abstract": "This repository contains the \n [ICSM](bblock/icsm.profiles.common) - Aus/NZ Intergovernmental Committee on Survey and Mapping Common (ANZLIC ICSM) profile of the [Cadastral Survey Data Exchange standard](https://icsm-au.github.io/3d-csdm-schema/). It is implemented by a further set of jurisdiction specific profiles using local vocabulary (codelists) and any additional content and rules necessary.\n \nThe profile is defined using the [OGC Building Blocks methodology](https://ogcincubator.github.io/bblocks-docs/).\n",
+  "description": "Each jurisdiction profile extends a [common ICSM profile] of a potentially universal [model of 3D cadastre](https://icsm-au.github.io/3d-csdm-model/), and a [JSON schema](https://icsm-au.github.io/3d-csdm-common/).\n\nImplementation Profiles (e.g. for each Jurisdiction) use the same documentation form as the common model, but extended with specific constraints and vocabulary usages.\n\nThis profile is thus compatible with the [OGC API Features](https://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-main.html) data exchange specification, and can be implemented by any standards compliant software capable of handling nested object sub-schemas and control of codelist in content.\n\ne.g. [Victoria (Australian state) Profile](https://icsm-au.github.io/3d-csdm/docs/vic-profile/)\n\n_The **[REVIEW GUIDE](https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/REVIEW_GUIDE.md)** provides a detailed overview of all aspects of the design and testing process, and related materials._\n\nThe relationships of this profile to specific jurisdictional profiles and and the underlying  common model are shown below:\n\n![](https://lucid.app/publicSegments/view/f7e6c029-db67-4186-9592-cab6ec3437d0/image.png)\n",
+  "modified": "2024-04-15T06:39:58.652620",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"32e803263591dfa42fd4a83c5a75b4efed7108b7",
@@ -316,7 +316,7 @@
     {
       "itemIdentifier": "icsm.profiles.common",
       "name": "Cadastral Survey Common ICSM Profile",
-      "abstract": "Building block for testing common rules for ICSM Cadastral Survey Data Model. These are rules that are not enforced in the schema so that potential reuse in other jurisdictions is possible.",
+      "abstract": "Common profile of the Cadastral Survey Data Model. All ICSM jurisdiction profiles will inherit schemas, rules and vocabulary bindings from this profile, ensuring consistency and minimising effort and complexity of jurisdictional profile specification.",
       "status": "under-development",
       "dateTimeAddition": "2023-07-31T00:00:00Z",
       "itemClass": "schema",
@@ -343,11 +343,11 @@
       "superBBlock": false,
       "shaclRules": {
         "icsm.profiles.common": [
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl"
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl"
         ]
       },
       "shaclClosures": [

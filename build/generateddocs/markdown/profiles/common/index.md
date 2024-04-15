@@ -3,7 +3,7 @@
 
 `icsm.profiles.common` *v0.1*
 
-Building block for testing common rules for ICSM Cadastral Survey Data Model. These are rules that are not enforced in the schema so that potential reuse in other jurisdictions is possible.
+Common profile of the Cadastral Survey Data Model. All ICSM jurisdiction profiles will inherit schemas, rules and vocabulary bindings from this profile, ensuring consistency and minimising effort and complexity of jurisdictional profile specification.
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
@@ -11,15 +11,19 @@ Building block for testing common rules for ICSM Cadastral Survey Data Model. Th
 
 ## Cadastral Survey Data Model - ICSM common
 
-Rules and default namespace bindings for ICSM Jurisdiction Profiles of the Cadastral Survey Data Model (CSDM)
+Rules and default namespace bindings for ICSM Jurisdiction Profiles of the Cadastral Survey Data Model (CSDM).
+
+The ICSM profiles defines an Address schema for annotation of Parcel objects, and a set of vocabularies where the ICSM Cadastral Survey Working Group have identified common terminology and semantics (meaning).
+
+Individual jurisdictions can define a profile of this profile, to enforce use of both the common model and the common ICSM content standards.
 
 
 ## Examples
 
 ### Common Profile
-Minimal example - empty except for example of profiled element using this profile rules.
+Examples are provided in specific jurisdictional profiles. 
 
-This example uses the NZ profile, and validates it only against the common ICSM profile requirements.
+See also the [ICSM address component](https://icsm-au.github.io/3d-csdm-profile-icsm/bblock/icsm.profiles.datatypes.address/examples)
 ## Schema
 
 ```yaml
