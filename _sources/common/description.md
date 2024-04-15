@@ -4,5 +4,5 @@ Rules and default namespace bindings for ICSM Jurisdiction Profiles of the Cadas
 
 The ICSM profiles defines an Address schema for annotation of Parcel objects, and a set of vocabularies where the ICSM Cadastral Survey Working Group have identified common terminology and semantics (meaning).
 
-Individual jurisdictions can define a profile of this profile, to enforce use of both the common model and the common ICSM content standards.
+Individual jurisdictions can define one or more specific profiles of the ICSM profile for different applications, using this as a base profile enforces use of both the common model and the common ICSM content standards.
 
