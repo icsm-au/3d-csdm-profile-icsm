@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/icsm-3d/context.jsonld",
+    "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/icsm-3d/context.jsonld",
     {
       "@base": "https://linked.data.gov.au/def/csdm/csd-example/",
       "eg1": "https://linked.data.gov.au/def/csdm/csd-example/",

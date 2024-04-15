@@ -9,7 +9,7 @@ allOf:
           properties:
             properties:
               address:
-                $ref: ../datatypes/address/schema.json#$defs/street-address
+                $ref: https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.yaml#$defs/street-address
 x-jsonld-extra-terms:
   sensorType:
     x-jsonld-type: '@id'

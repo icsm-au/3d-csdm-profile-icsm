@@ -69,7 +69,7 @@
         "streetAddress": {
           "allOf": [
             {
-              "$ref": "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/schema-oas3.0.json#/x-defs/icsm.profiles.datatypes.address$defs/icsm-address"
+              "$ref": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema-oas3.0.json#/x-defs/icsm.profiles.datatypes.address$defs/icsm-address"
             },
             {
               "required": [
@@ -81,7 +81,7 @@
       },
       "allOf": [
         {
-          "$ref": "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/schema-oas3.0.json#/x-defs/icsm.profiles.datatypes.address/$defs/icsm-address"
+          "$ref": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema-oas3.0.json#/x-defs/icsm.profiles.datatypes.address/$defs/icsm-address"
         }
       ],
       "x-jsonld-extra-terms": {
@@ -92,12 +92,12 @@
         "ads": "https:/icsm.org.au/placeholder/address/"
       },
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
-      "x-schema-source": "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/schema-oas3.0.json"
+      "x-schema-source": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema-oas3.0.json"
     }
   },
   "allOf": [
     {
-      "$ref": "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/schema-oas3.0.json#/x-defs/icsm.profiles.datatypes.address"
+      "$ref": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema-oas3.0.json#/x-defs/icsm.profiles.datatypes.address"
     }
   ]
 }

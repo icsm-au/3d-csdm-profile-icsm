@@ -1,0 +1,19 @@
+Validation report for icsm.profiles.icsm-3d - Cadastral Survey 3D profile
+Generated 2024-04-15T03:25:33.247981+00:00
+=== General ===
+
+** Validation error **
+Test was expected to fail but it did not.
+=== End General ===
+
+=== Files ===
+Using 3d-coords-fail.json from test resources
+JSON-LD context is present - uplifting
+Output JSON-LD 3d-coords-fail.jsonld created
+Output Turtle 3d-coords-fail.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

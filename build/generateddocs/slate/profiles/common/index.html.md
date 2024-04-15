@@ -26,7 +26,7 @@ Building block for testing common rules for ICSM Cadastral Survey Data Model. Th
 </p>
 
 <aside class="success">
-This building block is <strong><a href="https://github.com/icsm-au/3d-csdm-profiles/blob/main/build/tests/profiles/common/" target="_blank">valid</a></strong>
+This building block is <strong><a href="https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/common/" target="_blank">valid</a></strong>
 </aside>
 
 # Description
@@ -59,7 +59,7 @@ allOf:
           properties:
             properties:
               address:
-                $ref: ../datatypes/address/schema.json#$defs/street-address
+                $ref: https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.yaml#$defs/street-address
 x-jsonld-extra-terms:
   sensorType:
     x-jsonld-type: '@id'
@@ -89,12 +89,12 @@ x-jsonld-prefixes:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profiles%2Fbuild%2Fannotated%2Fprofiles%2Fcommon%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profile-icsm%2Fbuild%2Fannotated%2Fprofiles%2Fcommon%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/common/schema.yaml" target="_blank">https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/common/schema.yaml</a>
-* JSON version: <a href="https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/common/schema.json" target="_blank">https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/common/schema.json</a>
+* YAML version: <a href="https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/schema.yaml" target="_blank">https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/schema.yaml</a>
+* JSON version: <a href="https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/schema.json" target="_blank">https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/schema.json</a>
 
 
 # JSON-LD Context
@@ -550,12 +550,12 @@ Links to the schema:
           "@type": "@id"
         },
         "hasResult": {
+          "@id": "sosa:hasResult",
+          "@type": "@id",
           "@context": {
             "pose": "surv:pose",
             "distance": "surv:distance"
-          },
-          "@id": "sosa:hasResult",
-          "@type": "@id"
+          }
         },
         "angleAccuracy": "csdm:surveyobs/angleAccuracyMeasure",
         "distanceAccuracy": "csdm:surveyobs/distanceAccuracyMeasure",
@@ -1637,10 +1637,10 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profiles%2Fbuild%2Fannotated%2Fprofiles%2Fcommon%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profile-icsm%2Fbuild%2Fannotated%2Fprofiles%2Fcommon%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/common/context.jsonld" target="_blank">https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/common/context.jsonld</a>
+<a href="https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/context.jsonld" target="_blank">https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/context.jsonld</a>
 
 # Validation
 
@@ -1649,30 +1649,11 @@ You can find the full JSON-LD context here:
 The following sets of SHACL shapes are used for validating this building block:
 
 * Cadastral Survey Common ICSM Profile <small><code>icsm.profiles.common</code></small>
-  * [https://icsm-au.github.io/3d-csdm-profiles/profiles/icsm-point-codetypes-shacl.ttl](https://icsm-au.github.io/3d-csdm-profiles/profiles/icsm-point-codetypes-shacl.ttl)
-  * [https://icsm-au.github.io/3d-csdm-profiles/profiles/icsm-observation-properties.shacl](https://icsm-au.github.io/3d-csdm-profiles/profiles/icsm-observation-properties.shacl)
-  * [https://icsm-au.github.io/3d-csdm-profiles/profiles/icsm-parcel-codetypes-shacl.ttl](https://icsm-au.github.io/3d-csdm-profiles/profiles/icsm-parcel-codetypes-shacl.ttl)
-  * [https://icsm-au.github.io/3d-csdm-profiles/profiles/icsm-survey-metadata-shacl.ttl](https://icsm-au.github.io/3d-csdm-profiles/profiles/icsm-survey-metadata-shacl.ttl)
-  * [https://icsm-au.github.io/3d-csdm-profiles/profiles/icsm-references-shacl.ttl](https://icsm-au.github.io/3d-csdm-profiles/profiles/icsm-references-shacl.ttl)
-* Cadastral Survey Dataset <small><code>icsm.csdm.features.CSD</code></small>
-  * [https://icsm-au.github.io/3d-csdm-schema/_sources/csdm/shapes/parcel_module.shapes.ttl](https://icsm-au.github.io/3d-csdm-schema/_sources/csdm/shapes/parcel_module.shapes.ttl)
-  * [https://icsm-au.github.io/3d-csdm-schema/_sources/csdm/shapes/container.shapes.ttl](https://icsm-au.github.io/3d-csdm-schema/_sources/csdm/shapes/container.shapes.ttl)
-  * [https://icsm-au.github.io/3d-csdm-schema/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl](https://icsm-au.github.io/3d-csdm-schema/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl)
-* Feature with topology <small><code>ogc.geo.topo.features.topo-feature</code></small>
-  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
-  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
-* Compound Name <small><code>icsm.csdm.datatypes.compoundName</code></small>
-  * [https://icsm-au.github.io/3d-csdm-schema/_sources/csdm/datatypes/compoundName/rules.shacl](https://icsm-au.github.io/3d-csdm-schema/_sources/csdm/datatypes/compoundName/rules.shacl)
-* Observation Properties <small><code>ogc.sosa.properties.observation</code></small>
-  * [https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl](https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl)
-* Survey Observations <small><code>icsm.csdm.features.SurveyObservations</code></small>
-  * [https://icsm-au.github.io/3d-csdm-schema/_sources/csdm/features/SurveyObservations/rules.shacl](https://icsm-au.github.io/3d-csdm-schema/_sources/csdm/features/SurveyObservations/rules.shacl)
-* Non-linear Arc and Spline Descriptions using Point topology <small><code>ogc.geo.topo.features.topo-arc</code></small>
-  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
-  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
-* TopoFeatureCollection <small><code>ogc.geo.topo.features.topo-feature-collection</code></small>
-  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl)
-  * [https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl](https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl)
+  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl)
+  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl)
+  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl)
+  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl)
+  * [https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl](https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl)
 
 # References
 
@@ -1682,7 +1663,7 @@ The following sets of SHACL shapes are used for validating this building block:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/icsm-au/3d-csdm-profiles" target="_blank">https://github.com/icsm-au/3d-csdm-profiles</a>
+* URL: <a href="https://github.com/icsm-au/3d-csdm-profile-icsm" target="_blank">https://github.com/icsm-au/3d-csdm-profile-icsm</a>
 * Path:
-<code><a href="https://github.com/icsm-au/3d-csdm-profiles/blob/HEAD/_sources/common" target="_blank">_sources/common</a></code>
+<code><a href="https://github.com/icsm-au/3d-csdm-profile-icsm/blob/HEAD/_sources/common" target="_blank">_sources/common</a></code>
 

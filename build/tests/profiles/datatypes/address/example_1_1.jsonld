@@ -6,5 +6,5 @@
   "state": "VIC",
   "postCode": "3012",
   "country": "Australia",
-  "@context": "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/context.jsonld"
+  "@context": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld"
 }

@@ -30,7 +30,7 @@ A simple implementation of ICSM address model. Can be mapped to or replaced by a
 </p>
 
 <aside class="success">
-This building block is <strong><a href="https://github.com/icsm-au/3d-csdm-profiles/blob/main/build/tests/profiles/datatypes/address/" target="_blank">valid</a></strong>
+This building block is <strong><a href="https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/datatypes/address/" target="_blank">valid</a></strong>
 </aside>
 
 # Examples
@@ -54,8 +54,8 @@ This building block is <strong><a href="https://github.com/icsm-au/3d-csdm-profi
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://icsm-au.github.io/3d-csdm-profiles/build/tests/profiles/datatypes/address/example_1_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profiles%2Fbuild%2Ftests%2Fprofiles%2Fdatatypes%2Faddress%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://icsm-au.github.io/3d-csdm-profile-icsm/build/tests/profiles/datatypes/address/example_1_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profile-icsm%2Fbuild%2Ftests%2Fprofiles%2Fdatatypes%2Faddress%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -70,14 +70,14 @@ This building block is <strong><a href="https://github.com/icsm-au/3d-csdm-profi
   "state": "VIC",
   "postCode": "3012",
   "country": "Australia",
-  "@context": "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/context.jsonld"
+  "@context": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://icsm-au.github.io/3d-csdm-profiles/build/tests/profiles/datatypes/address/example_1_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profiles%2Fbuild%2Ftests%2Fprofiles%2Fdatatypes%2Faddress%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://icsm-au.github.io/3d-csdm-profile-icsm/build/tests/profiles/datatypes/address/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profile-icsm%2Fbuild%2Ftests%2Fprofiles%2Fdatatypes%2Faddress%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -100,7 +100,7 @@ This building block is <strong><a href="https://github.com/icsm-au/3d-csdm-profi
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://icsm-au.github.io/3d-csdm-profiles/build/tests/profiles/datatypes/address/example_1_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://icsm-au.github.io/3d-csdm-profile-icsm/build/tests/profiles/datatypes/address/example_1_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -124,8 +124,8 @@ A simple address with street number
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://icsm-au.github.io/3d-csdm-profiles/build/tests/profiles/datatypes/address/example_2_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profiles%2Fbuild%2Ftests%2Fprofiles%2Fdatatypes%2Faddress%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://icsm-au.github.io/3d-csdm-profile-icsm/build/tests/profiles/datatypes/address/example_2_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profile-icsm%2Fbuild%2Ftests%2Fprofiles%2Fdatatypes%2Faddress%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -138,14 +138,14 @@ A simple address with street number
   "state": "VIC",
   "postCode": "3012",
   "country": "Australia",
-  "@context": "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/context.jsonld"
+  "@context": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://icsm-au.github.io/3d-csdm-profiles/build/tests/profiles/datatypes/address/example_2_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profiles%2Fbuild%2Ftests%2Fprofiles%2Fdatatypes%2Faddress%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://icsm-au.github.io/3d-csdm-profile-icsm/build/tests/profiles/datatypes/address/example_2_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profile-icsm%2Fbuild%2Ftests%2Fprofiles%2Fdatatypes%2Faddress%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -165,7 +165,7 @@ A simple address with street number
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://icsm-au.github.io/3d-csdm-profiles/build/tests/profiles/datatypes/address/example_2_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://icsm-au.github.io/3d-csdm-profile-icsm/build/tests/profiles/datatypes/address/example_2_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -232,12 +232,12 @@ x-jsonld-prefixes:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profiles%2Fbuild%2Fannotated%2Fprofiles%2Fdatatypes%2Faddress%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profile-icsm%2Fbuild%2Fannotated%2Fprofiles%2Fdatatypes%2Faddress%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/schema.yaml" target="_blank">https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/schema.yaml</a>
-* JSON version: <a href="https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/schema.json" target="_blank">https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/schema.json</a>
+* YAML version: <a href="https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.yaml" target="_blank">https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.yaml</a>
+* JSON version: <a href="https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.json" target="_blank">https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.json</a>
 
 
 # JSON-LD Context
@@ -261,10 +261,10 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profiles%2Fbuild%2Fannotated%2Fprofiles%2Fdatatypes%2Faddress%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Ficsm-au.github.io%2F3d-csdm-profile-icsm%2Fbuild%2Fannotated%2Fprofiles%2Fdatatypes%2Faddress%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/context.jsonld" target="_blank">https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/context.jsonld</a>
+<a href="https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld" target="_blank">https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld</a>
 
 # References
 
@@ -274,7 +274,7 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/icsm-au/3d-csdm-profiles" target="_blank">https://github.com/icsm-au/3d-csdm-profiles</a>
+* URL: <a href="https://github.com/icsm-au/3d-csdm-profile-icsm" target="_blank">https://github.com/icsm-au/3d-csdm-profile-icsm</a>
 * Path:
-<code><a href="https://github.com/icsm-au/3d-csdm-profiles/blob/HEAD/_sources/datatypes/address" target="_blank">_sources/datatypes/address</a></code>
+<code><a href="https://github.com/icsm-au/3d-csdm-profile-icsm/blob/HEAD/_sources/datatypes/address" target="_blank">_sources/datatypes/address</a></code>
 

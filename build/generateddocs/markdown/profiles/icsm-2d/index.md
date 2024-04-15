@@ -26,8 +26,8 @@ allOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/icsm-2d/schema.json)
-* JSON version: [schema.json](https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/icsm-2d/schema.yaml)
+* YAML version: [schema.yaml](https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/icsm-2d/schema.json)
+* JSON version: [schema.json](https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/icsm-2d/schema.yaml)
 
 
 # JSON-LD Context
@@ -483,12 +483,12 @@ Links to the schema:
           "@type": "@id"
         },
         "hasResult": {
+          "@id": "sosa:hasResult",
+          "@type": "@id",
           "@context": {
             "pose": "surv:pose",
             "distance": "surv:distance"
-          },
-          "@id": "sosa:hasResult",
-          "@type": "@id"
+          }
         },
         "angleAccuracy": "csdm:surveyobs/angleAccuracyMeasure",
         "distanceAccuracy": "csdm:surveyobs/distanceAccuracyMeasure",
@@ -1548,7 +1548,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/icsm-2d/context.jsonld)
+[context.jsonld](https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/icsm-2d/context.jsonld)
 
 ## Sources
 
@@ -1558,6 +1558,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/icsm-au/3d-csdm-profiles](https://github.com/icsm-au/3d-csdm-profiles)
+* URL: [https://github.com/icsm-au/3d-csdm-profile-icsm](https://github.com/icsm-au/3d-csdm-profile-icsm)
 * Path: `_sources/icsm-2d`
 

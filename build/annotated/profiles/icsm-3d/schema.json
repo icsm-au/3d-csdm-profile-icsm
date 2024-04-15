@@ -20,7 +20,7 @@
           "items": {
             "allOf": [
               {
-                "$ref": "https://icsm-au.github.io/3d-csdm-schema/build/annotated/csdm/features/CSD/schema.json#/$defs/FeatureCollectionOptions"
+                "$ref": "https://icsm-au.github.io/3d-csdm-schema/build/annotated/csdm/features/CSD/schema.json"
               },
               {
                 "allOf": [

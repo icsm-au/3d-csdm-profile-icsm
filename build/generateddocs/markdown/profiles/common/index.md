@@ -34,7 +34,7 @@ allOf:
           properties:
             properties:
               address:
-                $ref: ../datatypes/address/schema.json#$defs/street-address
+                $ref: https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.yaml#$defs/street-address
 x-jsonld-extra-terms:
   sensorType:
     x-jsonld-type: '@id'
@@ -66,8 +66,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/common/schema.json)
-* JSON version: [schema.json](https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/common/schema.yaml)
+* YAML version: [schema.yaml](https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/schema.json)
+* JSON version: [schema.json](https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/schema.yaml)
 
 
 # JSON-LD Context
@@ -523,12 +523,12 @@ Links to the schema:
           "@type": "@id"
         },
         "hasResult": {
+          "@id": "sosa:hasResult",
+          "@type": "@id",
           "@context": {
             "pose": "surv:pose",
             "distance": "surv:distance"
-          },
-          "@id": "sosa:hasResult",
-          "@type": "@id"
+          }
         },
         "angleAccuracy": "csdm:surveyobs/angleAccuracyMeasure",
         "distanceAccuracy": "csdm:surveyobs/distanceAccuracyMeasure",
@@ -1611,7 +1611,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/common/context.jsonld)
+[context.jsonld](https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/context.jsonld)
 
 ## Sources
 
@@ -1621,6 +1621,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/icsm-au/3d-csdm-profiles](https://github.com/icsm-au/3d-csdm-profiles)
+* URL: [https://github.com/icsm-au/3d-csdm-profile-icsm](https://github.com/icsm-au/3d-csdm-profile-icsm)
 * Path: `_sources/common`
 

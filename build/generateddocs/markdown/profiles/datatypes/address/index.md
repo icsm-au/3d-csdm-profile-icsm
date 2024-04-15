@@ -35,7 +35,7 @@ A simple address with street number
   "state": "VIC",
   "postCode": "3012",
   "country": "Australia",
-  "@context": "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/context.jsonld"
+  "@context": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld"
 }
 ```
 
@@ -78,7 +78,7 @@ A simple address with PO box
   "state": "VIC",
   "postCode": "3012",
   "country": "Australia",
-  "@context": "https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/context.jsonld"
+  "@context": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld"
 }
 ```
 
@@ -157,8 +157,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/schema.json)
-* JSON version: [schema.json](https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/schema.yaml)
+* YAML version: [schema.yaml](https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.json)
+* JSON version: [schema.json](https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.yaml)
 
 
 # JSON-LD Context
@@ -183,7 +183,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://icsm-au.github.io/3d-csdm-profiles/build/annotated/profiles/datatypes/address/context.jsonld)
+[context.jsonld](https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld)
 
 ## Sources
 
@@ -193,6 +193,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/icsm-au/3d-csdm-profiles](https://github.com/icsm-au/3d-csdm-profiles)
+* URL: [https://github.com/icsm-au/3d-csdm-profile-icsm](https://github.com/icsm-au/3d-csdm-profile-icsm)
 * Path: `_sources/datatypes/address`
 
