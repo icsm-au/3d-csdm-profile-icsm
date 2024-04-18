@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "icsm-csdm",
   "version": "0.1",
-  "dateOfLastChange": "2024-04-15",
+  "dateOfLastChange": "2024-04-18",
   "sources": [
     {
       "title": "3D Cadastre Survey Data Model",

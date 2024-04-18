@@ -381,7 +381,7 @@ This building block is <strong><a href="https://github.com/icsm-au/3d-csdm-profi
 <h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
 <span class="na">description</span><span class="pi">:</span> <span class="s">Common ICSM profile of Cadastral Survey Data Model</span>
 <span class="na">allOf</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://icsm-au.github.io/3d-csdm-schema/build/annotated/csdm/features/CSD/schema.json</span>
+<span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s">https://icsm-au.github.io/3d-csdm-common/build/annotated/csdm/features/CSD/schema.yaml</span>
 <span class="pi">-</span> <span class="na">properties</span><span class="pi">:</span>
     <span class="na">parcels</span><span class="pi">:</span>
       <span class="na">properties</span><span class="pi">:</span>
@@ -1977,11 +1977,51 @@ This building block is <strong><a href="https://github.com/icsm-au/3d-csdm-profi
 <li>Cadastral Survey Common ICSM Profile <small><code>icsm.profiles.common</code></small>
 
 <ul>
-<li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl</a></li>
 <li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl</a></li>
-<li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl</a></li>
 <li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl</a></li>
+<li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl</a></li>
+<li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl</a></li>
 <li><a href="https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl">https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl</a></li>
+</ul></li>
+<li>Cadastral Survey Dataset <small><code>icsm.csdm.features.CSD</code></small>
+
+<ul>
+<li><a href="https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl">https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl</a></li>
+<li><a href="https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl">https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl</a></li>
+<li><a href="https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl">https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl</a></li>
+</ul></li>
+<li>Compound Name <small><code>icsm.csdm.datatypes.compoundName</code></small>
+
+<ul>
+<li><a href="https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl">https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl</a></li>
+</ul></li>
+<li>Feature with topology <small><code>ogc.geo.topo.features.topo-feature</code></small>
+
+<ul>
+<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl</a></li>
+<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl</a></li>
+</ul></li>
+<li>Observation Properties <small><code>ogc.sosa.properties.observation</code></small>
+
+<ul>
+<li><a href="https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl">https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl</a></li>
+</ul></li>
+<li>Non-linear Arc and Spline Descriptions using Point topology <small><code>ogc.geo.topo.features.topo-arc</code></small>
+
+<ul>
+<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl</a></li>
+<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl</a></li>
+</ul></li>
+<li>Survey Observations <small><code>icsm.csdm.features.SurveyObservations</code></small>
+
+<ul>
+<li><a href="https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl">https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl</a></li>
+</ul></li>
+<li>TopoFeatureCollection <small><code>ogc.geo.topo.features.topo-feature-collection</code></small>
+
+<ul>
+<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl</a></li>
+<li><a href="https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl">https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl</a></li>
 </ul></li>
 </ul>
 <h1 id='references'>References</h1>

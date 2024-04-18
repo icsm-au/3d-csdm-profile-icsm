@@ -30,7 +30,7 @@ See also the [ICSM address component](https://icsm-au.github.io/3d-csdm-profile-
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Common ICSM profile of Cadastral Survey Data Model
 allOf:
-- $ref: https://icsm-au.github.io/3d-csdm-schema/build/annotated/csdm/features/CSD/schema.json
+- $ref: https://icsm-au.github.io/3d-csdm-common/build/annotated/csdm/features/CSD/schema.yaml
 - properties:
     parcels:
       properties:

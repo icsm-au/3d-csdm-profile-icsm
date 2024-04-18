@@ -2,7 +2,7 @@
   "name": "Implementation Profiles for 3D CSDM",
   "abstract": "This repository contains the \n ICSM - [ANZLIC](https://www.anzlic.gov.au/) [Intergovernmental Committee on Survey and Mapping](https://www.icsm.gov.au/) - [Common  profile](bblock/icsm.profiles.common) of the [Cadastral Survey Data Model Exchange Specification](https://icsm-au.github.io/3d-csdm-common/). \n \n _The ICSM profile is a partial set of constraints, the full model is implemented by a further set of jurisdiction specific profiles using local vocabulary (codelists) and any additional content and rules necessary._\n \nProfiles are defined in a consistent, machine-readable and validatable way using the [OGC Building Blocks methodology](https://ogcincubator.github.io/bblocks-docs/).\n",
   "description": "Each jurisdiction profile extends a [common ICSM profile] of a general [model of 3D cadastre](https://icsm-au.github.io/3d-csdm-model/), and an [encoding specification in form of a JSON schema](https://icsm-au.github.io/3d-csdm-common/).\n\nThe encoding specification and all profiles are compatible with the [OGC API Features](https://opengeospatial.github.io/e-learning/ogcapi-features/text/basic-main.html) data exchange specification, and can thus be implemented by any standards compliant software capable of handling nested object sub-schemas and control of codelist in content.\n\nThe relationships of this profile to specific jurisdictional profiles and and the underlying  common model are shown below:\n\n![](https://lucid.app/publicSegments/view/f7e6c029-db67-4186-9592-cab6ec3437d0/image.png)\n",
-  "modified": "2024-04-15T22:54:51.328718",
+  "modified": "2024-04-18T06:07:49.299529",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"e4a611ba98dc47cf5ffb659b73d79151289b1133",
@@ -29,7 +29,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2024-04-15",
+      "dateOfLastChange": "2024-04-18",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [
         {
@@ -56,13 +56,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/datatypes/address/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/markdown/profiles/datatypes/address/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/json-full/profiles/datatypes/address/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/markdown/profiles/datatypes/address/index.md"
         },
         "slate": {
           "mediatype": "text/html",
@@ -83,7 +83,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2024-04-15",
+      "dateOfLastChange": "2024-04-18",
       "sources": [
         {
           "title": "3D Cadastre Survey Data Model",
@@ -113,13 +113,13 @@
       "sourceFiles": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-2d/",
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/markdown/profiles/icsm-2d/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/json-full/profiles/icsm-2d/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/markdown/profiles/icsm-2d/index.md"
         },
         "slate": {
           "mediatype": "text/html",
@@ -140,7 +140,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2024-04-15",
+      "dateOfLastChange": "2024-04-18",
       "sources": [
         {
           "title": "3D Cadastre Survey Data Model",
@@ -171,13 +171,13 @@
       "validationPassed": false,
       "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/icsm-3d/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/markdown/profiles/icsm-3d/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/json-full/profiles/icsm-3d/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/markdown/profiles/icsm-3d/index.md"
         },
         "slate": {
           "mediatype": "text/html",
@@ -198,7 +198,7 @@
       "itemClass": "schema",
       "register": "icsm-csdm",
       "version": "0.1",
-      "dateOfLastChange": "2024-04-15",
+      "dateOfLastChange": "2024-04-18",
       "sources": [
         {
           "title": "3D Cadastre Survey Data Model",
@@ -219,11 +219,37 @@
       "superBBlock": false,
       "shaclRules": {
         "icsm.profiles.common": [
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
-          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
+          "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
           "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl"
+        ],
+        "icsm.csdm.features.CSD": [
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl",
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl",
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl"
+        ],
+        "icsm.csdm.datatypes.compoundName": [
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "ogc.sosa.properties.observation": [
+          "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
+        ],
+        "ogc.geo.topo.features.topo-arc": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+        ],
+        "icsm.csdm.features.SurveyObservations": [
+          "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl"
+        ],
+        "ogc.geo.topo.features.topo-feature-collection": [
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
+          "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
         ]
       },
       "shaclClosures": [
@@ -252,6 +278,7 @@
         "https://icsm-au.github.io/icsm-vocabs/cadastre/SurveyPoints/state/nz-state.ttl"
       ],
       "dependsOn": [
+        "icsm.csdm.features.CSD",
         "icsm.profiles.datatypes.address"
       ],
       "ldContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/context.jsonld",
@@ -265,13 +292,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/common/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/markdown/profiles/common/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/json-full/profiles/common/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/markdown/profiles/common/index.md"
         },
         "slate": {
           "mediatype": "text/html",
