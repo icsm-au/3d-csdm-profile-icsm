@@ -2,7 +2,7 @@
 
 This document provides additional guidance to support review of the provided data models and encodings, reflecting the scope of the deliverables and the current state of testing.
 
-To suggest an enhancement to the model or to report a defect, please submit your query via the [issue tracker](https://github.com/icsm-au/3d-csdm-common/issues).
+To suggest an enhancement to the model or to report a defect, please submit your query via the [issue tracker](https://github.com/icsm-au/3d-csdm-profile-icsm/issues).
 
 # Overview
 
