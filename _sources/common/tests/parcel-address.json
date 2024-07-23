@@ -1,0 +1,257 @@
+{
+  "id": "DP_422532",
+  "name": "DP 422532",
+  "description": "Western-Australia-Parcel-Example",
+  "type": "FeatureCollection",
+  "featureType": "CSD",
+  "tenureType": "wa-parcel-type:freehold",
+  "planType": "wa-survey-type:deposited-plan",
+  "purpose": "wa-survey-purpose:subdivision",
+  "surveyType": "wa-survey-type:SSA",
+  "time": {
+    "date": "2022-05-22"
+  },
+  "horizontalCRS": "epsg:8024",
+  "bearingRotation": 0.0,
+  "surveyTitle": "Lots 210 - 232, 240, Roads, 9005 & Easements",
+  "adminUnit": [
+  ],
+  "wasGeneratedBy": {
+    "id": "DP-1-S2",
+    "endedAtTime": "2029-01-01T01:02:03Z"
+  },
+  "features": [],
+  "referencedCSDs": [
+  ],
+  "points": [
+    {
+      "id": "BoundaryMark",
+      "type": "FeatureCollection",
+      "featureType": "BoundaryMarks",
+      "features": [
+        {
+          "id": "184",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              54693.284,
+              398706.957
+            ]
+          },
+          "properties": {
+            "name": null,
+            "purpose": "wa-surveypoint-purpose:road-boundary",
+            "ptQualityMeasure": 0.100,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:did-not-search"
+            }
+          }
+        },
+        {
+          "id": "189",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              54709.808,
+              398707.154
+            ]
+          },
+          "properties": {
+            "name": null,
+            "purpose": "wa-surveypoint-purpose:road-boundary",
+            "ptQualityMeasure": 0.100,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:did-not-search"
+            }
+          }
+        },
+        {
+          "id": "190",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              54718.977,
+              398711.145
+            ]
+          },
+          "properties": {
+            "name": null,
+            "purpose": "wa-surveypoint-purpose:road-boundary",
+            "ptQualityMeasure": 0.100,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:did-not-search"
+            }
+          }
+        },
+        {
+          "id": "196",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              54725.074,
+              398717.535
+            ]
+          },
+          "properties": {
+            "name": null,
+            "purpose": "wa-surveypoint-purpose:road-boundary",
+            "ptQualityMeasure": 0.100,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:did-not-search"
+            }
+          }
+        },
+        {
+          "id": "197",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              54698.303,
+              398743.075
+            ]
+          },
+          "properties": {
+            "name": null,
+            "purpose": "wa-surveypoint-purpose:internal-boundary",
+            "ptQualityMeasure": 0.100,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:did-not-search"
+            }
+          }
+        },
+        {
+          "id": "198",
+          "type": "Feature",
+          "featureType": "BoundaryMark",
+          "time": null,
+          "geometry": null,
+          "place": {
+            "type": "Point",
+            "coordinates": [
+              54688.639,
+              398732.946
+            ]
+          },
+          "properties": {
+            "name": null,
+            "purpose": "wa-surveypoint-purpose:internal-boundary",
+            "ptQualityMeasure": 0.100,
+            "comment": null,
+            "monumentedBy": {
+              "form": "wa-monument-form:peg",
+              "condition": "wa-monument-condition:ok",
+              "state": "wa-monument-state:did-not-search"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "vectorObservations": [
+  ],
+  "observedVectors": [
+  ],
+  "parcels": [
+    {
+      "id": "PrimaryParcels",
+      "type": "FeatureCollection",
+      "featureType": "PrimaryParcel",
+      "properties": null,
+      "features": [
+        {
+          "id": "213",
+          "type": "Feature",
+          "featureType": "PrimaryParcel",
+          "geometry": null,
+          "topology": {
+            "type": "Polygon",
+            "references": [
+              [
+                "298",
+                "311",
+                "309",
+                "314",
+                "313",
+                "312"
+              ]
+            ]
+          },
+          "properties": {
+            "address": {
+              "propertyNumber": "4",
+              "streetName": "Clarendon",
+              "streetType": "St",
+              "locality": "Maidstone",
+              "state": "VIC",
+              "postCode": "3012",
+              "country": "Australia"
+            },
+            "appellation": {
+              "label": "Lot 213 DP 572532",
+              "hasPart": [
+                {
+                  "type": "ParcelType",
+                  "label": "Lot"
+                },
+                {
+                  "type": "ParcelIdentifier",
+                  "label": "213"
+                },
+                {
+                  "type": "PlanType",
+                  "label": "DP"
+                },
+                {
+                  "type": "PlanNumber",
+                  "label": "572532"
+                }
+              ]
+            },
+            "area": 798,
+            "parcelType": "wa-parcel-type:freehold",
+            "parcelPurpose": "wa-parcel-purpose:lot",
+            "parcelState": "wa-parcel-state:created",
+            "interests": []
+          }
+        }
+      ]
+    }
+  ],
+  "supportingDocuments": [],
+  "annotations": []
+}
