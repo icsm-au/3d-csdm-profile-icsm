@@ -18,11 +18,11 @@
 
 jcl:testBoundVocab-parcelType
     a                   sh:NodeShape ;
-    sh:targetSubjectsOf parcel:parcelType ;
+    sh:targetSubjectsOf parcel:type ;
     sh:message          "ParcelType  value not in target vocabulary" ;
     sh:name             "ParcelType Term type" ;
     sh:property         [ sh:name "Parcel Type" ;
-                          sh:path parcel:parcelType ;
+                          sh:path parcel:type ;
                         sh:minCount 1 ;
                         sh:nodeKind sh:IRI ] ;
 .
