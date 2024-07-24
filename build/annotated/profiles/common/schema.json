@@ -8,16 +8,28 @@
     {
       "properties": {
         "parcels": {
-          "properties": {
-            "features": {
-              "properties": {
-                "properties": {
-                  "address": {
-                    "$ref": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.json#$defs/street-address"
-                  }
+          "type": "array",
+          "items": {
+            "properties": {
+              "features": {
+                "type": "array",
+                "items": {
+                  "properties": {
+                    "properties": {
+                      "address": {
+                        "$ref": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.json#/$defs/streetAddress"
+                      }
+                    }
+                  },
+                  "required": [
+                    "properties"
+                  ]
                 }
               }
-            }
+            },
+            "required": [
+              "features"
+            ]
           }
         }
       }

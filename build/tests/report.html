@@ -22,23 +22,49 @@
             *[data-bs-toggle].collapsed .caret {
                 transform: rotate(0deg);
             }
+            .highlighted {
+                animation: highlight-border 3500ms ease-out;
+            }
+            .highlighted h2 button {
+                animation: highlight 3500ms ease-out;
+            }
+            @keyframes highlight {
+                0% {
+                    background: #ffff90;
+                }
+                100% {
+                    background: var(--bs-accordion-active-bg);
+                }
+            }
+            @keyframes highlight-border {
+                0% {
+                    border-color: red;
+                    border-width: 2px;
+                }
+                100% {
+                    border-color: var(--bs-accordion-border-color);
+                    border-width: var(--bs-accordion-border-width);
+                }
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2024-04-18T06:10:10.356484+00:00</small>
-                <p class="summary fw-semibold text-danger">
-                    Number of passing building blocks: 3 / 4 (75%)
+            <small class="datetime">Generated at 2024-07-24T03:18:29.253265+00:00</small>
+                <p class="summary fw-semibold text-success">
+                    Number of passing building blocks: 4 / 4 (100%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
                 <a href="#" class="collapse-all">Collapse all</a>
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
-                        <div class="accordion-item bblock-report" data-bblock-id="icsm.profiles.datatypes.address" id="bblock-0">
+                        <div class="accordion-item bblock-report" data-bblock-id="icsm.profiles.datatypes.address" id="bblock-icsm.profiles.datatypes.address">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bblock-collapse-0">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-icsm\.profiles\.datatypes\.address">
                                     <div class="flex-fill">
                                         ICSM Address (Placeholder)
                                         <small class="ms-2 bblock-id">icsm.profiles.datatypes.address</small>
@@ -50,7 +76,7 @@
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-0">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-icsm.profiles.datatypes.address">
                                 <div class="accordion-body">
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 2 / 2
@@ -116,9 +142,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="icsm.profiles.icsm-2d" id="bblock-1">
+                        <div class="accordion-item bblock-report" data-bblock-id="icsm.profiles.icsm-2d" id="bblock-icsm.profiles.icsm-2d">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bblock-collapse-1">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-icsm\.profiles\.icsm-2d">
                                     <div class="flex-fill">
                                         Cadastral Survey 2D (+elevation) basic Profile
                                         <small class="ms-2 bblock-id">icsm.profiles.icsm-2d</small>
@@ -130,101 +158,39 @@
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-1">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-icsm.profiles.icsm-2d">
                                 <div class="accordion-body">
                                         <div class="alert alert-info mb-0">No tests were found for this building block.</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="icsm.profiles.icsm-3d" id="bblock-2">
+                        <div class="accordion-item bblock-report" data-bblock-id="icsm.profiles.icsm-3d" id="bblock-icsm.profiles.icsm-3d">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#bblock-collapse-2">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-icsm\.profiles\.icsm-3d">
                                     <div class="flex-fill">
                                         Cadastral Survey 3D profile
                                         <small class="ms-2 bblock-id">icsm.profiles.icsm-3d</small>
                                     </div>
 
-                                    <span class="badge text-bg-danger me-2">
-                                            Tests Failed
-                                            (0% passed)
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse show" id="bblock-collapse-2">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-icsm.profiles.icsm-3d">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-danger">
-                                            Test passed: 0 / 2
-                                        </p>
-                                        <div class="card mb-2 validation-item require-fail">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-3"
-                                                            aria-expanded="false" aria-controls="uid-3"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="../../_sources/icsm-3d/tests/3d-coords-fail.json" target="_blank">3d-coords-fail.json</a>
-                                                    <span class="badge bg-secondary test_resource">Test resource</span>
-                                                        <span class="badge text-bg-info">Requires fail</span>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-3">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">General</div>
-                                                                    <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using 3d-coords-fail.json from test resources</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD 3d-coords-fail.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle 3d-coords-fail.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card mb-2 validation-item require-fail">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
-                                                            aria-expanded="false" aria-controls="uid-4"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="../../_sources/icsm-3d/tests/3d-obs-fail.json" target="_blank">3d-obs-fail.json</a>
-                                                    <span class="badge bg-secondary test_resource">Test resource</span>
-                                                        <span class="badge text-bg-info">Requires fail</span>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">General</div>
-                                                                    <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using 3d-obs-fail.json from test resources</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD 3d-obs-fail.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle 3d-obs-fail.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="icsm.profiles.common" id="bblock-3">
+                        <div class="accordion-item bblock-report" data-bblock-id="icsm.profiles.common" id="bblock-icsm.profiles.common">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bblock-collapse-3">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-icsm\.profiles\.common">
                                     <div class="flex-fill">
                                         Cadastral Survey Common ICSM Profile
                                         <small class="ms-2 bblock-id">icsm.profiles.common</small>
@@ -236,17 +202,17 @@
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-3">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-icsm.profiles.common">
                                 <div class="accordion-body">
                                         <p class="summary fw-semibold text-success">
-                                            Test passed: 4 / 4
+                                            Test passed: 5 / 5
                                         </p>
                                         <div class="card mb-2 validation-item require-fail">
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
-                                                            aria-expanded="false" aria-controls="uid-5"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-3"
+                                                            aria-expanded="false" aria-controls="uid-3"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -258,7 +224,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                     <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
@@ -297,6 +263,25 @@ On instance:
      &#x27;vectorObservations&#x27;: [],
      &#x27;wasGeneratedBy&#x27;: {}}</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-references-shacl.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-references-shacl.ttl:
+ - Shape :referencedCSDs-present: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-point-codetypes-shacl.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-point-codetypes-shacl.ttl:
+ - Shape jcl:testBoundVocab-pt-quality-class: *none*
+ - Shape jcl:testBoundVocab-vector-purpose: *none*
+ - Shape jcl:testBoundVocab-state: *none*
+ - Shape jcl:testBoundVocab-surveypoint-purpose: *none*
+ - Shape jcl:testBoundVocab-form: *none*
+ - Shape jcl:testBoundVocab-condition: *none*
+</div>
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for profiles/icsm-survey-metadata-shacl.ttl:
   Validation Report
   Conforms: False
@@ -330,67 +315,30 @@ On instance:
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-survey-metadata-shacl.ttl:
  - Shape :testSurveyMetadata: &lt;file:///github/workspace/DP_572532&gt;
- - Shape :testCRS: &lt;file:///github/workspace/DP_572532&gt;
  - Shape :testVHD: *none*
- - Shape :testDistanceType: *none*
  - Shape :testCompoundCRS: *none*
+ - Shape :testDistanceType: *none*
+ - Shape :testCRS: &lt;file:///github/workspace/DP_572532&gt;
  - Shape :testAngleType: *none*
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-references-shacl.ttl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-references-shacl.ttl:
- - Shape :referencedCSDs-present: *none*
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-parcel-codetypes-shacl.ttl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-parcel-codetypes-shacl.ttl:
- - Shape jcl:testBoundVocab-parcelInterest: *none*
- - Shape jcl:testBoundVocab-parcelType: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-observation-properties.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-observation-properties.shacl:
- - Shape :testInCollectionOrMember-madeBySensor-Dies-in-rdflib: *none*
- - Shape :bindSurveyObservation-angle-and-distance-types: *none*
  - Shape :testInCollectionOrMember-procedure: *none*
- - Shape :annotate-madeBySensor: *none*
  - Shape :testInCollectionOrMember-madeBySensor: *none*
+ - Shape :bindSurveyObservation-angle-and-distance-types: *none*
+ - Shape :testInCollectionOrMember-madeBySensor-Dies-in-rdflib: *none*
+ - Shape :annotate-madeBySensor: *none*
 </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-point-codetypes-shacl.ttl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-parcel-codetypes-shacl.ttl:
   Validation Report
   Conforms: True
   </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-point-codetypes-shacl.ttl:
- - Shape jcl:testBoundVocab-pt-quality-class: *none*
- - Shape jcl:testBoundVocab-state: *none*
- - Shape jcl:testBoundVocab-surveypoint-purpose: *none*
- - Shape jcl:testBoundVocab-condition: *none*
- - Shape jcl:testBoundVocab-vector-purpose: *none*
- - Shape jcl:testBoundVocab-form: *none*
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
- - Shape :PurposeOfSpatialUnit: *none*
- - Shape :PropertyUnit: *none*
- - Shape :ParcelState: *none*
- - Shape :Apellation: *none*
- - Shape :SecondaryParcel: *none*
- - Shape :LandInterest: *none*
- - Shape :ParcelQualityClass: *none*
- - Shape :PrimaryParcel: *none*
- - Shape :EstateParcel: *none*
- - Shape :Parcel: *none*
- - Shape :ParcelAggregate: *none*
- - Shape :ParcelType: *none*
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-parcel-codetypes-shacl.ttl:
+ - Shape jcl:testBoundVocab-parcelType: *none*
+ - Shape jcl:testBoundVocab-parcelInterest: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl:
   Validation Report
@@ -400,6 +348,24 @@ On instance:
  - Shape container:CSD: *none*
  - Shape container:CSD-seeAlso: *none*
  - Shape &lt;https://linked.data.gov.au/def/csdm/surveyprov/SurveyType&gt;: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+ - Shape :PropertyUnit: *none*
+ - Shape :SecondaryParcel: *none*
+ - Shape :PurposeOfSpatialUnit: *none*
+ - Shape :ParcelAggregate: *none*
+ - Shape :Apellation: *none*
+ - Shape :LandInterest: *none*
+ - Shape :PrimaryParcel: *none*
+ - Shape :ParcelType: *none*
+ - Shape :EstateParcel: *none*
+ - Shape :ParcelState: *none*
+ - Shape :ParcelQualityClass: *none*
+ - Shape :Parcel: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl:
   Validation Report
@@ -413,35 +379,35 @@ On instance:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl:
- - Shape _:n2358ed18947746a6a45a66f94078cf40b1: *none*
+ - Shape _:n2a452a20eb8647ef81b6092bdd047274b1: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoReferencesExist: *none*
  - Shape topo:testTopoLinesReferencePoints: *none*
+ - Shape topo:testTopoReferencesExist: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nc1f9a35fb8cd4409b6b5ad05da0762d1b1: *none*
- - Shape _:nc1f9a35fb8cd4409b6b5ad05da0762d1b3: *none*
+ - Shape _:nddeb5dfbd1fe40ebb8cff1b1deee8badb3: *none*
+ - Shape _:nddeb5dfbd1fe40ebb8cff1b1deee8badb1: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl:
   Validation Report
@@ -458,8 +424,636 @@ On instance:
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-6"
-                                                            aria-expanded="false" aria-controls="uid-6"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
+                                                            aria-expanded="false" aria-controls="uid-4"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="../../_sources/common/tests/parcel-address-fail.json" target="_blank">parcel-address-fail.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using parcel-address-fail.json from test resources</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD parcel-address-fail.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle parcel-address-fail.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-references-shacl.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-references-shacl.ttl:
+ - Shape :referencedCSDs-present: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for profiles/icsm-point-codetypes-shacl.ttl:
+  Validation Report
+  Conforms: False
+  Results (30):
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class termtype:PointQualityClass ; sh:path commonpatterns:qualityClass ]
+  	Focus Node: &lt;file:///github/workspace/49655173&gt;
+  	Value Node: &lt;nz-point-class:7&gt;
+  	Result Path: commonpatterns:qualityClass
+  	Message: Value does not have class termtype:PointQualityClass
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class termtype:PointQualityClass ; sh:path commonpatterns:qualityClass ]
+  	Focus Node: &lt;file:///github/workspace/29960715&gt;
+  	Value Node: &lt;nz-point-class:7&gt;
+  	Result Path: commonpatterns:qualityClass
+  	Message: Value does not have class termtype:PointQualityClass
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class termtype:PointQualityClass ; sh:path commonpatterns:qualityClass ]
+  	Focus Node: &lt;file:///github/workspace/49655172&gt;
+  	Value Node: &lt;nz-point-class:7&gt;
+  	Result Path: commonpatterns:qualityClass
+  	Message: Value does not have class termtype:PointQualityClass
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class termtype:PointQualityClass ; sh:path commonpatterns:qualityClass ]
+  	Focus Node: &lt;file:///github/workspace/49655187&gt;
+  	Value Node: &lt;nz-point-class:7&gt;
+  	Result Path: commonpatterns:qualityClass
+  	Message: Value does not have class termtype:PointQualityClass
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class termtype:PointQualityClass ; sh:path commonpatterns:qualityClass ]
+  	Focus Node: &lt;file:///github/workspace/49655170&gt;
+  	Value Node: &lt;nz-point-class:7&gt;
+  	Result Path: commonpatterns:qualityClass
+  	Message: Value does not have class termtype:PointQualityClass
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class termtype:PointQualityClass ; sh:path commonpatterns:qualityClass ]
+  	Focus Node: &lt;file:///github/workspace/49655171&gt;
+  	Value Node: &lt;nz-point-class:7&gt;
+  	Result Path: commonpatterns:qualityClass
+  	Message: Value does not have class termtype:PointQualityClass
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointState ; sh:name Literal(&quot;state&quot;) ; sh:path surv:state ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:relb&gt; ; surv:form &lt;nz-monument-form:peg&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-state:new&gt;
+  	Result Path: surv:state
+  	Message: Value does not have class surv:SurveyPointState
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointState ; sh:name Literal(&quot;state&quot;) ; sh:path surv:state ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:relb&gt; ; surv:form &lt;nz-monument-form:disk&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-state:new&gt;
+  	Result Path: surv:state
+  	Message: Value does not have class surv:SurveyPointState
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointState ; sh:name Literal(&quot;state&quot;) ; sh:path surv:state ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:nfnd&gt; ; surv:form &lt;nz-monument-form:peg&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-state:new&gt;
+  	Result Path: surv:state
+  	Message: Value does not have class surv:SurveyPointState
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointState ; sh:name Literal(&quot;state&quot;) ; sh:path surv:state ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:impm&gt; ; surv:form &lt;nz-monument-form:unmk&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-state:new&gt;
+  	Result Path: surv:state
+  	Message: Value does not have class surv:SurveyPointState
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointState ; sh:name Literal(&quot;state&quot;) ; sh:path surv:state ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:relb&gt; ; surv:form &lt;nz-monument-form:peg&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-state:new&gt;
+  	Result Path: surv:state
+  	Message: Value does not have class surv:SurveyPointState
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointState ; sh:name Literal(&quot;state&quot;) ; sh:path surv:state ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:relb&gt; ; surv:form &lt;nz-monument-form:peg&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-state:new&gt;
+  	Result Path: surv:state
+  	Message: Value does not have class surv:SurveyPointState
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointPurpose ; sh:path surv:purpose ]
+  	Focus Node: &lt;file:///github/workspace/49655173&gt;
+  	Value Node: &lt;nz-surveypoint-purpose:bndy&gt;
+  	Result Path: surv:purpose
+  	Message: Value does not have class surv:SurveyPointPurpose
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointPurpose ; sh:path surv:purpose ]
+  	Focus Node: &lt;file:///github/workspace/29960715&gt;
+  	Value Node: &lt;nz-surveypoint-purpose:bndy&gt;
+  	Result Path: surv:purpose
+  	Message: Value does not have class surv:SurveyPointPurpose
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointPurpose ; sh:path surv:purpose ]
+  	Focus Node: &lt;file:///github/workspace/49655172&gt;
+  	Value Node: &lt;nz-surveypoint-purpose:bndy&gt;
+  	Result Path: surv:purpose
+  	Message: Value does not have class surv:SurveyPointPurpose
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointPurpose ; sh:path surv:purpose ]
+  	Focus Node: &lt;file:///github/workspace/49655187&gt;
+  	Value Node: &lt;nz-surveypoint-purpose:bndy&gt;
+  	Result Path: surv:purpose
+  	Message: Value does not have class surv:SurveyPointPurpose
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointPurpose ; sh:path surv:purpose ]
+  	Focus Node: &lt;file:///github/workspace/49655170&gt;
+  	Value Node: &lt;nz-surveypoint-purpose:bndy&gt;
+  	Result Path: surv:purpose
+  	Message: Value does not have class surv:SurveyPointPurpose
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointPurpose ; sh:path surv:purpose ]
+  	Focus Node: &lt;file:///github/workspace/49655171&gt;
+  	Value Node: &lt;nz-surveypoint-purpose:bndy&gt;
+  	Result Path: surv:purpose
+  	Message: Value does not have class surv:SurveyPointPurpose
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:MonumentForm ; sh:name Literal(&quot;form&quot;) ; sh:path surv:form ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:relb&gt; ; surv:form &lt;nz-monument-form:peg&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-form:peg&gt;
+  	Result Path: surv:form
+  	Message: Value does not have class surv:MonumentForm
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:MonumentForm ; sh:name Literal(&quot;form&quot;) ; sh:path surv:form ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:relb&gt; ; surv:form &lt;nz-monument-form:disk&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-form:disk&gt;
+  	Result Path: surv:form
+  	Message: Value does not have class surv:MonumentForm
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:MonumentForm ; sh:name Literal(&quot;form&quot;) ; sh:path surv:form ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:nfnd&gt; ; surv:form &lt;nz-monument-form:peg&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-form:peg&gt;
+  	Result Path: surv:form
+  	Message: Value does not have class surv:MonumentForm
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:MonumentForm ; sh:name Literal(&quot;form&quot;) ; sh:path surv:form ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:impm&gt; ; surv:form &lt;nz-monument-form:unmk&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-form:unmk&gt;
+  	Result Path: surv:form
+  	Message: Value does not have class surv:MonumentForm
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:MonumentForm ; sh:name Literal(&quot;form&quot;) ; sh:path surv:form ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:relb&gt; ; surv:form &lt;nz-monument-form:peg&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-form:peg&gt;
+  	Result Path: surv:form
+  	Message: Value does not have class surv:MonumentForm
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:MonumentForm ; sh:name Literal(&quot;form&quot;) ; sh:path surv:form ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:relb&gt; ; surv:form &lt;nz-monument-form:peg&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-form:peg&gt;
+  	Result Path: surv:form
+  	Message: Value does not have class surv:MonumentForm
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:ConditionCode ; sh:name Literal(&quot;condition&quot;) ; sh:path surv:condition ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:relb&gt; ; surv:form &lt;nz-monument-form:peg&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-condition:relb&gt;
+  	Result Path: surv:condition
+  	Message: Value does not have class surv:ConditionCode
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:ConditionCode ; sh:name Literal(&quot;condition&quot;) ; sh:path surv:condition ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:relb&gt; ; surv:form &lt;nz-monument-form:disk&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-condition:relb&gt;
+  	Result Path: surv:condition
+  	Message: Value does not have class surv:ConditionCode
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:ConditionCode ; sh:name Literal(&quot;condition&quot;) ; sh:path surv:condition ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:nfnd&gt; ; surv:form &lt;nz-monument-form:peg&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-condition:nfnd&gt;
+  	Result Path: surv:condition
+  	Message: Value does not have class surv:ConditionCode
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:ConditionCode ; sh:name Literal(&quot;condition&quot;) ; sh:path surv:condition ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:impm&gt; ; surv:form &lt;nz-monument-form:unmk&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-condition:impm&gt;
+  	Result Path: surv:condition
+  	Message: Value does not have class surv:ConditionCode
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:ConditionCode ; sh:name Literal(&quot;condition&quot;) ; sh:path surv:condition ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:relb&gt; ; surv:form &lt;nz-monument-form:peg&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-condition:relb&gt;
+  	Result Path: surv:condition
+  	Message: Value does not have class surv:ConditionCode
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:ConditionCode ; sh:name Literal(&quot;condition&quot;) ; sh:path surv:condition ]
+  	Focus Node: [ surv:condition &lt;nz-monument-condition:relb&gt; ; surv:form &lt;nz-monument-form:peg&gt; ; surv:state &lt;nz-monument-state:new&gt; ]
+  	Value Node: &lt;nz-monument-condition:relb&gt;
+  	Result Path: surv:condition
+  	Message: Value does not have class surv:ConditionCode
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-point-codetypes-shacl.ttl:
+ - Shape jcl:testBoundVocab-pt-quality-class: &lt;file:///github/workspace/49655173&gt;,&lt;file:///github/workspace/29960715&gt;,&lt;file:///github/workspace/49655172&gt;,&lt;file:///github/workspace/49655187&gt;,&lt;file:///github/workspace/49655170&gt;,&lt;file:///github/workspace/49655171&gt;
+ - Shape jcl:testBoundVocab-vector-purpose: &lt;file:///github/workspace/observedVectors&gt;
+ - Shape jcl:testBoundVocab-state: &lt;file:///github/workspace/49655187&gt;/surv:monumentedBy,&lt;file:///github/workspace/49655171&gt;/surv:monumentedBy,&lt;file:///github/workspace/29960715&gt;/surv:monumentedBy,&lt;file:///github/workspace/49655170&gt;/surv:monumentedBy,&lt;file:///github/workspace/49655172&gt;/surv:monumentedBy,&lt;file:///github/workspace/49655173&gt;/surv:monumentedBy
+ - Shape jcl:testBoundVocab-surveypoint-purpose: &lt;file:///github/workspace/49655173&gt;,&lt;file:///github/workspace/29960715&gt;,&lt;file:///github/workspace/49655172&gt;,&lt;file:///github/workspace/49655187&gt;,&lt;file:///github/workspace/49655170&gt;,&lt;file:///github/workspace/49655171&gt;
+ - Shape jcl:testBoundVocab-form: &lt;file:///github/workspace/49655187&gt;/surv:monumentedBy,&lt;file:///github/workspace/49655171&gt;/surv:monumentedBy,&lt;file:///github/workspace/29960715&gt;/surv:monumentedBy,&lt;file:///github/workspace/49655170&gt;/surv:monumentedBy,&lt;file:///github/workspace/49655172&gt;/surv:monumentedBy,&lt;file:///github/workspace/49655173&gt;/surv:monumentedBy
+ - Shape jcl:testBoundVocab-condition: &lt;file:///github/workspace/49655187&gt;/surv:monumentedBy,&lt;file:///github/workspace/49655171&gt;/surv:monumentedBy,&lt;file:///github/workspace/29960715&gt;/surv:monumentedBy,&lt;file:///github/workspace/49655170&gt;/surv:monumentedBy,&lt;file:///github/workspace/49655172&gt;/surv:monumentedBy,&lt;file:///github/workspace/49655173&gt;/surv:monumentedBy
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for profiles/icsm-survey-metadata-shacl.ttl:
+  Validation Report
+  Conforms: False
+  Results (4):
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPurpose ; sh:message Literal(&quot;Survey Purpose is registered value&quot;) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:name Literal(&quot;Survey Purpose valid&quot;) ; sh:path container:purpose ]
+  	Focus Node: &lt;file:///github/workspace/DP_572532&gt;
+  	Value Node: &lt;nz-survey-purpose:lts&gt;
+  	Result Path: container:purpose
+  	Message: Survey Purpose is registered value
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class termtype:SurveyType ; sh:message Literal(&quot;Survey Type is registered value&quot;) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:name Literal(&quot;Survey Type valid&quot;) ; sh:path container:surveyType ]
+  	Focus Node: &lt;file:///github/workspace/DP_572532&gt;
+  	Value Node: &lt;nz-survey-type:ltp&gt;
+  	Result Path: container:surveyType
+  	Message: Survey Type is registered value
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class termtype:AdminUnit ; sh:message Literal(&quot;AdminUnit Value must match profile&quot;) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:name Literal(&quot;AdminUnit Value&quot;) ; sh:path ( container:adminUnit oa:hasTarget ) ]
+  	Focus Node: &lt;file:///github/workspace/DP_572532&gt;
+  	Value Node: &lt;nz-territorial-authority:076&gt;
+  	Result Path: ( container:adminUnit oa:hasTarget )
+  	Message: AdminUnit Value must match profile
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class termtype:AdminUnit ; sh:message Literal(&quot;AdminUnit Value must match profile&quot;) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:name Literal(&quot;AdminUnit Value&quot;) ; sh:path ( container:adminUnit oa:hasTarget ) ]
+  	Focus Node: &lt;file:///github/workspace/DP_572532&gt;
+  	Value Node: &lt;nz-land-district:NA&gt;
+  	Result Path: ( container:adminUnit oa:hasTarget )
+  	Message: AdminUnit Value must match profile
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-survey-metadata-shacl.ttl:
+ - Shape :testSurveyMetadata: &lt;file:///github/workspace/DP_572532&gt;
+ - Shape :testVHD: *none*
+ - Shape :testCompoundCRS: *none*
+ - Shape :testDistanceType: *none*
+ - Shape :testCRS: &lt;file:///github/workspace/DP_572532&gt;
+ - Shape :testAngleType: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-observation-properties.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-observation-properties.shacl:
+ - Shape :testInCollectionOrMember-procedure: &lt;vectorobservation:calculation&gt;
+ - Shape :testInCollectionOrMember-madeBySensor: &lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember
+ - Shape :bindSurveyObservation-angle-and-distance-types: &lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember
+ - Shape :testInCollectionOrMember-madeBySensor-Dies-in-rdflib: *none*
+ - Shape :annotate-madeBySensor: &lt;vectorobservation:calculation&gt;
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-parcel-codetypes-shacl.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-parcel-codetypes-shacl.ttl:
+ - Shape jcl:testBoundVocab-parcelType: &lt;file:///github/workspace/8446454&gt;
+ - Shape jcl:testBoundVocab-parcelInterest: &lt;file:///github/workspace/8446454&gt;/parcel:interest,&lt;file:///github/workspace/8446454&gt;/parcel:interest
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl:
+ - Shape container:CSD: *none*
+ - Shape container:CSD-seeAlso: *none*
+ - Shape &lt;https://linked.data.gov.au/def/csdm/surveyprov/SurveyType&gt;: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+ - Shape :PropertyUnit: *none*
+ - Shape :SecondaryParcel: *none*
+ - Shape :PurposeOfSpatialUnit: *none*
+ - Shape :ParcelAggregate: *none*
+ - Shape :Apellation: *none*
+ - Shape :LandInterest: *none*
+ - Shape :PrimaryParcel: *none*
+ - Shape :ParcelType: *none*
+ - Shape :EstateParcel: *none*
+ - Shape :ParcelState: *none*
+ - Shape :ParcelQualityClass: *none*
+ - Shape :Parcel: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl:
+ - Shape :testFOIexists: &lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl:
+ - Shape _:n2a452a20eb8647ef81b6092bdd047274b1: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+  Validation Report
+  Conforms: False
+  Results (12):
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/29960715&gt; &lt;file:///github/workspace/49655170&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/29960715&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref geojson:geometry/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/29960715&gt; &lt;file:///github/workspace/49655170&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/49655170&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref geojson:geometry/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/49655187&gt; &lt;file:///github/workspace/49655172&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/49655187&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref geojson:geometry/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/49655187&gt; &lt;file:///github/workspace/49655172&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/49655172&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref geojson:geometry/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/49655170&gt; &lt;file:///github/workspace/49655187&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/49655170&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref geojson:geometry/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/49655170&gt; &lt;file:///github/workspace/49655187&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/49655187&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref geojson:geometry/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/49655173&gt; &lt;file:///github/workspace/49655171&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/49655173&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref geojson:geometry/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/49655173&gt; &lt;file:///github/workspace/49655171&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/49655171&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref geojson:geometry/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/49655171&gt; &lt;file:///github/workspace/29960715&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/49655171&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref geojson:geometry/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/49655171&gt; &lt;file:///github/workspace/29960715&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/29960715&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref geojson:geometry/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/49655172&gt; &lt;file:///github/workspace/49655173&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/49655172&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref geojson:geometry/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  Constraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: topo:testTopoLinesReferencePoints
+  	Focus Node: [ geojson:relatedFeatures ( &lt;file:///github/workspace/49655172&gt; &lt;file:///github/workspace/49655173&gt; ) ; rdf:type geojson:LineString ]
+  	Value Node: &lt;file:///github/workspace/49655173&gt;
+  	Result Path: geojson:topology
+  	Source Constraint: [ sh:message Literal(&quot;Lines topologies must reference points within current graph closure.&quot;) ; sh:select Literal(&quot;
+          prefix rdf:     &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          PREFIX rdfs:    &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+          prefix geojson: &lt;https://purl.org/geojson/vocab#&gt;
+  
+          SELECT $this (geojson:topology as ?path) (?ref as ?value)
+          WHERE {
+           $this geojson:relatedFeatures/rdf:rest*/rdf:first ?ref .
+           FILTER NOT EXISTS {
+               ?ref geojson:geometry/rdf:type geojson:Point }
+          }
+  &quot;) ]
+  	Message: Lines topologies must reference points within current graph closure.
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
+ - Shape topo:testTopoLinesReferencePoints: &lt;file:///github/workspace/38471664&gt;/geojson:topology,&lt;file:///github/workspace/38471662&gt;/geojson:topology,&lt;file:///github/workspace/38471663&gt;/geojson:topology,&lt;file:///github/workspace/38471666&gt;/geojson:topology,&lt;file:///github/workspace/38471665&gt;/geojson:topology,&lt;file:///github/workspace/38471667&gt;/geojson:topology
+ - Shape topo:testTopoReferencesExist: &lt;file:///github/workspace/38471664&gt;/geojson:topology,&lt;file:///github/workspace/38471662&gt;/geojson:topology,&lt;file:///github/workspace/38471663&gt;/geojson:topology,&lt;file:///github/workspace/8446454&gt;/geojson:topology,&lt;file:///github/workspace/38471666&gt;/geojson:topology,&lt;file:///github/workspace/38471665&gt;/geojson:topology,&lt;file:///github/workspace/38471667&gt;/geojson:topology
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
+ - Shape _:nddeb5dfbd1fe40ebb8cff1b1deee8badb3: *none*
+ - Shape _:nddeb5dfbd1fe40ebb8cff1b1deee8badb1: &lt;file:///github/workspace/49655173&gt;/dct:spatial,&lt;file:///github/workspace/49655187&gt;/dct:spatial,&lt;file:///github/workspace/49655171&gt;/dct:spatial,&lt;file:///github/workspace/49655170&gt;/dct:spatial,&lt;file:///github/workspace/29960715&gt;/dct:spatial,&lt;file:///github/workspace/49655172&gt;/dct:spatial
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: &lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: &lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: &lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: &lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl:
+ - Shape :testRequiredProperties: &lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember,&lt;vectorobservation:calculation&gt;/sosa:hasMember
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item require-fail">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
+                                                            aria-expanded="false" aria-controls="uid-5"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -471,7 +1065,7 @@ On instance:
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-6">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                     <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
@@ -486,6 +1080,8 @@ On instance:
 Failed validating &#x27;anyOf&#x27; in schema[1][&#x27;properties&#x27;][&#x27;wasGeneratedBy&#x27;]:
     {&#x27;allOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/influenced&#x27;}],
      &#x27;anyOf&#x27;: [{&#x27;required&#x27;: [&#x27;activityType&#x27;]},
+               {&#x27;required&#x27;: [&#x27;prov:type&#x27;]},
+               {&#x27;required&#x27;: [&#x27;type&#x27;]},
                {&#x27;required&#x27;: [&#x27;used&#x27;]},
                {&#x27;required&#x27;: [&#x27;wasInformedBy&#x27;]},
                {&#x27;required&#x27;: [&#x27;endedAtTime&#x27;]},
@@ -507,6 +1103,7 @@ Failed validating &#x27;anyOf&#x27; in schema[1][&#x27;properties&#x27;][&#x27;w
                     &#x27;invalidated&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/oneOrMoreEntitiesOrRefIds&#x27;,
                                     &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#invalidated&#x27;,
                                     &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
+                    &#x27;prov:type&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/ActivityTypes&#x27;},
                     &#x27;qualifiedAssociation&#x27;: {&#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/objectref&#x27;},
                                                        {&#x27;$ref&#x27;: &#x27;#/$defs/Association&#x27;},
                                                        {&#x27;items&#x27;: {&#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/objectref&#x27;},
@@ -536,6 +1133,7 @@ Failed validating &#x27;anyOf&#x27; in schema[1][&#x27;properties&#x27;][&#x27;w
                                                   &#x27;type&#x27;: &#x27;array&#x27;}],
                                        &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedUsage&#x27;,
                                        &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
+                    &#x27;type&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/ActivityTypes&#x27;},
                     &#x27;used&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/oneOrMoreEntitiesOrRefIds&#x27;,
                              &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#used&#x27;,
                              &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
@@ -556,6 +1154,54 @@ Failed validating &#x27;anyOf&#x27; in schema[1][&#x27;properties&#x27;][&#x27;w
 On instance[&#x27;wasGeneratedBy&#x27;]:
     {}</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-references-shacl.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-references-shacl.ttl:
+ - Shape :referencedCSDs-present: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for profiles/icsm-point-codetypes-shacl.ttl:
+  Validation Report
+  Conforms: False
+  Results (4):
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointState ; sh:name Literal(&quot;state&quot;) ; sh:path surv:state ]
+  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;fail-nz-monument-form:unmk&gt; ; surv:state &lt;fail-monument-state:original&gt; ]
+  	Value Node: &lt;fail-monument-state:original&gt;
+  	Result Path: surv:state
+  	Message: Value does not have class surv:SurveyPointState
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointPurpose ; sh:path surv:purpose ]
+  	Focus Node: &lt;file:///github/workspace/1725787&gt;
+  	Value Node: &lt;fail-surveypoint-purpose:boundary&gt;
+  	Result Path: surv:purpose
+  	Message: Value does not have class surv:SurveyPointPurpose
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:MonumentForm ; sh:name Literal(&quot;form&quot;) ; sh:path surv:form ]
+  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;fail-nz-monument-form:unmk&gt; ; surv:state &lt;fail-monument-state:original&gt; ]
+  	Value Node: &lt;fail-nz-monument-form:unmk&gt;
+  	Result Path: surv:form
+  	Message: Value does not have class surv:MonumentForm
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:ConditionCode ; sh:name Literal(&quot;condition&quot;) ; sh:path surv:condition ]
+  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;fail-nz-monument-form:unmk&gt; ; surv:state &lt;fail-monument-state:original&gt; ]
+  	Value Node: &lt;monument-condition:mkfd&gt;
+  	Result Path: surv:condition
+  	Message: Value does not have class surv:ConditionCode
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-point-codetypes-shacl.ttl:
+ - Shape jcl:testBoundVocab-pt-quality-class: &lt;file:///github/workspace/1725787&gt;
+ - Shape jcl:testBoundVocab-vector-purpose: *none*
+ - Shape jcl:testBoundVocab-state: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
+ - Shape jcl:testBoundVocab-surveypoint-purpose: &lt;file:///github/workspace/1725787&gt;
+ - Shape jcl:testBoundVocab-form: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
+ - Shape jcl:testBoundVocab-condition: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
+</div>
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for profiles/icsm-survey-metadata-shacl.ttl:
   Validation Report
   Conforms: False
@@ -589,96 +1235,30 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-survey-metadata-shacl.ttl:
  - Shape :testSurveyMetadata: &lt;file:///github/workspace/DP_572532&gt;
- - Shape :testCRS: &lt;file:///github/workspace/DP_572532&gt;
  - Shape :testVHD: *none*
- - Shape :testDistanceType: *none*
  - Shape :testCompoundCRS: *none*
+ - Shape :testDistanceType: *none*
+ - Shape :testCRS: &lt;file:///github/workspace/DP_572532&gt;
  - Shape :testAngleType: *none*
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-references-shacl.ttl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-references-shacl.ttl:
- - Shape :referencedCSDs-present: *none*
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-parcel-codetypes-shacl.ttl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-parcel-codetypes-shacl.ttl:
- - Shape jcl:testBoundVocab-parcelInterest: *none*
- - Shape jcl:testBoundVocab-parcelType: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-observation-properties.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-observation-properties.shacl:
- - Shape :testInCollectionOrMember-madeBySensor-Dies-in-rdflib: *none*
- - Shape :bindSurveyObservation-angle-and-distance-types: *none*
  - Shape :testInCollectionOrMember-procedure: *none*
- - Shape :annotate-madeBySensor: *none*
  - Shape :testInCollectionOrMember-madeBySensor: *none*
+ - Shape :bindSurveyObservation-angle-and-distance-types: *none*
+ - Shape :testInCollectionOrMember-madeBySensor-Dies-in-rdflib: *none*
+ - Shape :annotate-madeBySensor: *none*
 </div>
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for profiles/icsm-point-codetypes-shacl.ttl:
-  Validation Report
-  Conforms: False
-  Results (4):
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class surv:SurveyPointState ; sh:name Literal(&quot;state&quot;) ; sh:path surv:state ]
-  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;fail-nz-monument-form:unmk&gt; ; surv:state &lt;fail-monument-state:original&gt; ]
-  	Value Node: &lt;fail-monument-state:original&gt;
-  	Result Path: surv:state
-  	Message: Value does not have class surv:SurveyPointState
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class surv:SurveyPointPurpose ; sh:path surv:purpose ]
-  	Focus Node: &lt;file:///github/workspace/1725787&gt;
-  	Value Node: &lt;fail-surveypoint-purpose:boundary&gt;
-  	Result Path: surv:purpose
-  	Message: Value does not have class surv:SurveyPointPurpose
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class surv:ConditionCode ; sh:name Literal(&quot;condition&quot;) ; sh:path surv:condition ]
-  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;fail-nz-monument-form:unmk&gt; ; surv:state &lt;fail-monument-state:original&gt; ]
-  	Value Node: &lt;monument-condition:mkfd&gt;
-  	Result Path: surv:condition
-  	Message: Value does not have class surv:ConditionCode
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class surv:MonumentForm ; sh:name Literal(&quot;form&quot;) ; sh:path surv:form ]
-  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;fail-nz-monument-form:unmk&gt; ; surv:state &lt;fail-monument-state:original&gt; ]
-  	Value Node: &lt;fail-nz-monument-form:unmk&gt;
-  	Result Path: surv:form
-  	Message: Value does not have class surv:MonumentForm
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-point-codetypes-shacl.ttl:
- - Shape jcl:testBoundVocab-pt-quality-class: &lt;file:///github/workspace/1725787&gt;
- - Shape jcl:testBoundVocab-state: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
- - Shape jcl:testBoundVocab-surveypoint-purpose: &lt;file:///github/workspace/1725787&gt;
- - Shape jcl:testBoundVocab-condition: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
- - Shape jcl:testBoundVocab-vector-purpose: *none*
- - Shape jcl:testBoundVocab-form: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-parcel-codetypes-shacl.ttl:
   Validation Report
   Conforms: True
   </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
- - Shape :PurposeOfSpatialUnit: *none*
- - Shape :PropertyUnit: *none*
- - Shape :ParcelState: *none*
- - Shape :Apellation: *none*
- - Shape :SecondaryParcel: *none*
- - Shape :LandInterest: *none*
- - Shape :ParcelQualityClass: *none*
- - Shape :PrimaryParcel: *none*
- - Shape :EstateParcel: *none*
- - Shape :Parcel: *none*
- - Shape :ParcelAggregate: *none*
- - Shape :ParcelType: *none*
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-parcel-codetypes-shacl.ttl:
+ - Shape jcl:testBoundVocab-parcelType: *none*
+ - Shape jcl:testBoundVocab-parcelInterest: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl:
   Validation Report
@@ -688,6 +1268,24 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
  - Shape container:CSD: *none*
  - Shape container:CSD-seeAlso: *none*
  - Shape &lt;https://linked.data.gov.au/def/csdm/surveyprov/SurveyType&gt;: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+ - Shape :PropertyUnit: *none*
+ - Shape :SecondaryParcel: *none*
+ - Shape :PurposeOfSpatialUnit: *none*
+ - Shape :ParcelAggregate: *none*
+ - Shape :Apellation: *none*
+ - Shape :LandInterest: *none*
+ - Shape :PrimaryParcel: *none*
+ - Shape :ParcelType: *none*
+ - Shape :EstateParcel: *none*
+ - Shape :ParcelState: *none*
+ - Shape :ParcelQualityClass: *none*
+ - Shape :Parcel: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl:
   Validation Report
@@ -701,35 +1299,35 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl:
- - Shape _:n2358ed18947746a6a45a66f94078cf40b1: *none*
+ - Shape _:n2a452a20eb8647ef81b6092bdd047274b1: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoReferencesExist: *none*
  - Shape topo:testTopoLinesReferencePoints: *none*
+ - Shape topo:testTopoReferencesExist: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nc1f9a35fb8cd4409b6b5ad05da0762d1b1: &lt;file:///github/workspace/1725787&gt;/geojson:geometry
- - Shape _:nc1f9a35fb8cd4409b6b5ad05da0762d1b3: &lt;file:///github/workspace/1725787&gt;/geojson:geometry
+ - Shape _:nddeb5dfbd1fe40ebb8cff1b1deee8badb3: &lt;file:///github/workspace/1725787&gt;/geojson:geometry
+ - Shape _:nddeb5dfbd1fe40ebb8cff1b1deee8badb1: &lt;file:///github/workspace/1725787&gt;/geojson:geometry
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl:
   Validation Report
@@ -746,8 +1344,8 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-7"
-                                                            aria-expanded="false" aria-controls="uid-7"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-6"
+                                                            aria-expanded="false" aria-controls="uid-6"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -759,7 +1357,7 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-7">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-6">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                     <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
@@ -771,6 +1369,54 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-references-shacl.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-references-shacl.ttl:
+ - Shape :referencedCSDs-present: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for profiles/icsm-point-codetypes-shacl.ttl:
+  Validation Report
+  Conforms: False
+  Results (4):
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointState ; sh:name Literal(&quot;state&quot;) ; sh:path surv:state ]
+  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;nz-monument-form:concept-exists-fail&gt; ; surv:state &lt;monument-state:original&gt; ]
+  	Value Node: &lt;monument-state:original&gt;
+  	Result Path: surv:state
+  	Message: Value does not have class surv:SurveyPointState
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointPurpose ; sh:path surv:purpose ]
+  	Focus Node: &lt;file:///github/workspace/1725787&gt;
+  	Value Node: &lt;surveypoint-purpose:boundary&gt;
+  	Result Path: surv:purpose
+  	Message: Value does not have class surv:SurveyPointPurpose
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:MonumentForm ; sh:name Literal(&quot;form&quot;) ; sh:path surv:form ]
+  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;nz-monument-form:concept-exists-fail&gt; ; surv:state &lt;monument-state:original&gt; ]
+  	Value Node: &lt;nz-monument-form:concept-exists-fail&gt;
+  	Result Path: surv:form
+  	Message: Value does not have class surv:MonumentForm
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:ConditionCode ; sh:name Literal(&quot;condition&quot;) ; sh:path surv:condition ]
+  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;nz-monument-form:concept-exists-fail&gt; ; surv:state &lt;monument-state:original&gt; ]
+  	Value Node: &lt;monument-condition:mkfd&gt;
+  	Result Path: surv:condition
+  	Message: Value does not have class surv:ConditionCode
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-point-codetypes-shacl.ttl:
+ - Shape jcl:testBoundVocab-pt-quality-class: &lt;file:///github/workspace/1725787&gt;
+ - Shape jcl:testBoundVocab-vector-purpose: *none*
+ - Shape jcl:testBoundVocab-state: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
+ - Shape jcl:testBoundVocab-surveypoint-purpose: &lt;file:///github/workspace/1725787&gt;
+ - Shape jcl:testBoundVocab-form: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
+ - Shape jcl:testBoundVocab-condition: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
+</div>
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for profiles/icsm-survey-metadata-shacl.ttl:
   Validation Report
   Conforms: False
@@ -804,96 +1450,30 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-survey-metadata-shacl.ttl:
  - Shape :testSurveyMetadata: &lt;file:///github/workspace/DP_572532&gt;
- - Shape :testCRS: &lt;file:///github/workspace/DP_572532&gt;
  - Shape :testVHD: *none*
- - Shape :testDistanceType: *none*
  - Shape :testCompoundCRS: *none*
+ - Shape :testDistanceType: *none*
+ - Shape :testCRS: &lt;file:///github/workspace/DP_572532&gt;
  - Shape :testAngleType: *none*
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-references-shacl.ttl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-references-shacl.ttl:
- - Shape :referencedCSDs-present: *none*
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-parcel-codetypes-shacl.ttl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-parcel-codetypes-shacl.ttl:
- - Shape jcl:testBoundVocab-parcelInterest: *none*
- - Shape jcl:testBoundVocab-parcelType: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-observation-properties.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-observation-properties.shacl:
- - Shape :testInCollectionOrMember-madeBySensor-Dies-in-rdflib: *none*
- - Shape :bindSurveyObservation-angle-and-distance-types: *none*
  - Shape :testInCollectionOrMember-procedure: *none*
- - Shape :annotate-madeBySensor: *none*
  - Shape :testInCollectionOrMember-madeBySensor: *none*
+ - Shape :bindSurveyObservation-angle-and-distance-types: *none*
+ - Shape :testInCollectionOrMember-madeBySensor-Dies-in-rdflib: *none*
+ - Shape :annotate-madeBySensor: *none*
 </div>
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for profiles/icsm-point-codetypes-shacl.ttl:
-  Validation Report
-  Conforms: False
-  Results (4):
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class surv:SurveyPointState ; sh:name Literal(&quot;state&quot;) ; sh:path surv:state ]
-  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;nz-monument-form:concept-exists-fail&gt; ; surv:state &lt;monument-state:original&gt; ]
-  	Value Node: &lt;monument-state:original&gt;
-  	Result Path: surv:state
-  	Message: Value does not have class surv:SurveyPointState
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class surv:SurveyPointPurpose ; sh:path surv:purpose ]
-  	Focus Node: &lt;file:///github/workspace/1725787&gt;
-  	Value Node: &lt;surveypoint-purpose:boundary&gt;
-  	Result Path: surv:purpose
-  	Message: Value does not have class surv:SurveyPointPurpose
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class surv:ConditionCode ; sh:name Literal(&quot;condition&quot;) ; sh:path surv:condition ]
-  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;nz-monument-form:concept-exists-fail&gt; ; surv:state &lt;monument-state:original&gt; ]
-  	Value Node: &lt;monument-condition:mkfd&gt;
-  	Result Path: surv:condition
-  	Message: Value does not have class surv:ConditionCode
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class surv:MonumentForm ; sh:name Literal(&quot;form&quot;) ; sh:path surv:form ]
-  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;nz-monument-form:concept-exists-fail&gt; ; surv:state &lt;monument-state:original&gt; ]
-  	Value Node: &lt;nz-monument-form:concept-exists-fail&gt;
-  	Result Path: surv:form
-  	Message: Value does not have class surv:MonumentForm
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-point-codetypes-shacl.ttl:
- - Shape jcl:testBoundVocab-pt-quality-class: &lt;file:///github/workspace/1725787&gt;
- - Shape jcl:testBoundVocab-state: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
- - Shape jcl:testBoundVocab-surveypoint-purpose: &lt;file:///github/workspace/1725787&gt;
- - Shape jcl:testBoundVocab-condition: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
- - Shape jcl:testBoundVocab-vector-purpose: *none*
- - Shape jcl:testBoundVocab-form: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-parcel-codetypes-shacl.ttl:
   Validation Report
   Conforms: True
   </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
- - Shape :PurposeOfSpatialUnit: *none*
- - Shape :PropertyUnit: *none*
- - Shape :ParcelState: *none*
- - Shape :Apellation: *none*
- - Shape :SecondaryParcel: *none*
- - Shape :LandInterest: *none*
- - Shape :ParcelQualityClass: *none*
- - Shape :PrimaryParcel: *none*
- - Shape :EstateParcel: *none*
- - Shape :Parcel: *none*
- - Shape :ParcelAggregate: *none*
- - Shape :ParcelType: *none*
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-parcel-codetypes-shacl.ttl:
+ - Shape jcl:testBoundVocab-parcelType: *none*
+ - Shape jcl:testBoundVocab-parcelInterest: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl:
   Validation Report
@@ -903,6 +1483,24 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
  - Shape container:CSD: *none*
  - Shape container:CSD-seeAlso: *none*
  - Shape &lt;https://linked.data.gov.au/def/csdm/surveyprov/SurveyType&gt;: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+ - Shape :PropertyUnit: *none*
+ - Shape :SecondaryParcel: *none*
+ - Shape :PurposeOfSpatialUnit: *none*
+ - Shape :ParcelAggregate: *none*
+ - Shape :Apellation: *none*
+ - Shape :LandInterest: *none*
+ - Shape :PrimaryParcel: *none*
+ - Shape :ParcelType: *none*
+ - Shape :EstateParcel: *none*
+ - Shape :ParcelState: *none*
+ - Shape :ParcelQualityClass: *none*
+ - Shape :Parcel: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl:
   Validation Report
@@ -916,35 +1514,35 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl:
- - Shape _:n2358ed18947746a6a45a66f94078cf40b1: *none*
+ - Shape _:n2a452a20eb8647ef81b6092bdd047274b1: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoReferencesExist: *none*
  - Shape topo:testTopoLinesReferencePoints: *none*
+ - Shape topo:testTopoReferencesExist: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nc1f9a35fb8cd4409b6b5ad05da0762d1b1: &lt;file:///github/workspace/1725787&gt;/geojson:geometry
- - Shape _:nc1f9a35fb8cd4409b6b5ad05da0762d1b3: &lt;file:///github/workspace/1725787&gt;/geojson:geometry
+ - Shape _:nddeb5dfbd1fe40ebb8cff1b1deee8badb3: &lt;file:///github/workspace/1725787&gt;/geojson:geometry
+ - Shape _:nddeb5dfbd1fe40ebb8cff1b1deee8badb1: &lt;file:///github/workspace/1725787&gt;/geojson:geometry
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl:
   Validation Report
@@ -961,8 +1559,8 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-8"
-                                                            aria-expanded="false" aria-controls="uid-8"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-7"
+                                                            aria-expanded="false" aria-controls="uid-7"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -974,7 +1572,7 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-8">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-7">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                     <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
@@ -989,6 +1587,8 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
 Failed validating &#x27;anyOf&#x27; in schema[1][&#x27;properties&#x27;][&#x27;wasGeneratedBy&#x27;]:
     {&#x27;allOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/influenced&#x27;}],
      &#x27;anyOf&#x27;: [{&#x27;required&#x27;: [&#x27;activityType&#x27;]},
+               {&#x27;required&#x27;: [&#x27;prov:type&#x27;]},
+               {&#x27;required&#x27;: [&#x27;type&#x27;]},
                {&#x27;required&#x27;: [&#x27;used&#x27;]},
                {&#x27;required&#x27;: [&#x27;wasInformedBy&#x27;]},
                {&#x27;required&#x27;: [&#x27;endedAtTime&#x27;]},
@@ -1010,6 +1610,7 @@ Failed validating &#x27;anyOf&#x27; in schema[1][&#x27;properties&#x27;][&#x27;w
                     &#x27;invalidated&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/oneOrMoreEntitiesOrRefIds&#x27;,
                                     &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#invalidated&#x27;,
                                     &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
+                    &#x27;prov:type&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/ActivityTypes&#x27;},
                     &#x27;qualifiedAssociation&#x27;: {&#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/objectref&#x27;},
                                                        {&#x27;$ref&#x27;: &#x27;#/$defs/Association&#x27;},
                                                        {&#x27;items&#x27;: {&#x27;oneOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/objectref&#x27;},
@@ -1039,6 +1640,7 @@ Failed validating &#x27;anyOf&#x27; in schema[1][&#x27;properties&#x27;][&#x27;w
                                                   &#x27;type&#x27;: &#x27;array&#x27;}],
                                        &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#qualifiedUsage&#x27;,
                                        &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
+                    &#x27;type&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/ActivityTypes&#x27;},
                     &#x27;used&#x27;: {&#x27;$ref&#x27;: &#x27;#/$defs/oneOrMoreEntitiesOrRefIds&#x27;,
                              &#x27;x-jsonld-id&#x27;: &#x27;http://www.w3.org/ns/prov#used&#x27;,
                              &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
@@ -1059,6 +1661,54 @@ Failed validating &#x27;anyOf&#x27; in schema[1][&#x27;properties&#x27;][&#x27;w
 On instance[&#x27;wasGeneratedBy&#x27;]:
     {}</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-references-shacl.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-references-shacl.ttl:
+ - Shape :referencedCSDs-present: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for profiles/icsm-point-codetypes-shacl.ttl:
+  Validation Report
+  Conforms: False
+  Results (4):
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointState ; sh:name Literal(&quot;state&quot;) ; sh:path surv:state ]
+  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;file:///github/workspace/&gt; ; surv:state &lt;monument-state:original&gt; ]
+  	Value Node: &lt;monument-state:original&gt;
+  	Result Path: surv:state
+  	Message: Value does not have class surv:SurveyPointState
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:SurveyPointPurpose ; sh:path surv:purpose ]
+  	Focus Node: &lt;file:///github/workspace/1725787&gt;
+  	Value Node: &lt;surveypoint-purpose:boundary&gt;
+  	Result Path: surv:purpose
+  	Message: Value does not have class surv:SurveyPointPurpose
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:MonumentForm ; sh:name Literal(&quot;form&quot;) ; sh:path surv:form ]
+  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;file:///github/workspace/&gt; ; surv:state &lt;monument-state:original&gt; ]
+  	Value Node: &lt;file:///github/workspace/&gt;
+  	Result Path: surv:form
+  	Message: Value does not have class surv:MonumentForm
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:class surv:ConditionCode ; sh:name Literal(&quot;condition&quot;) ; sh:path surv:condition ]
+  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;file:///github/workspace/&gt; ; surv:state &lt;monument-state:original&gt; ]
+  	Value Node: &lt;monument-condition:mkfd&gt;
+  	Result Path: surv:condition
+  	Message: Value does not have class surv:ConditionCode
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-point-codetypes-shacl.ttl:
+ - Shape jcl:testBoundVocab-pt-quality-class: &lt;file:///github/workspace/1725787&gt;
+ - Shape jcl:testBoundVocab-vector-purpose: *none*
+ - Shape jcl:testBoundVocab-state: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
+ - Shape jcl:testBoundVocab-surveypoint-purpose: &lt;file:///github/workspace/1725787&gt;
+ - Shape jcl:testBoundVocab-form: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
+ - Shape jcl:testBoundVocab-condition: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
+</div>
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for profiles/icsm-survey-metadata-shacl.ttl:
   Validation Report
   Conforms: False
@@ -1092,96 +1742,30 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-survey-metadata-shacl.ttl:
  - Shape :testSurveyMetadata: &lt;file:///github/workspace/DP_572532&gt;
- - Shape :testCRS: &lt;file:///github/workspace/DP_572532&gt;
  - Shape :testVHD: *none*
- - Shape :testDistanceType: *none*
  - Shape :testCompoundCRS: *none*
+ - Shape :testDistanceType: *none*
+ - Shape :testCRS: &lt;file:///github/workspace/DP_572532&gt;
  - Shape :testAngleType: *none*
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-references-shacl.ttl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-references-shacl.ttl:
- - Shape :referencedCSDs-present: *none*
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-parcel-codetypes-shacl.ttl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-parcel-codetypes-shacl.ttl:
- - Shape jcl:testBoundVocab-parcelInterest: *none*
- - Shape jcl:testBoundVocab-parcelType: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-observation-properties.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-observation-properties.shacl:
- - Shape :testInCollectionOrMember-madeBySensor-Dies-in-rdflib: *none*
- - Shape :bindSurveyObservation-angle-and-distance-types: *none*
  - Shape :testInCollectionOrMember-procedure: *none*
- - Shape :annotate-madeBySensor: *none*
  - Shape :testInCollectionOrMember-madeBySensor: *none*
+ - Shape :bindSurveyObservation-angle-and-distance-types: *none*
+ - Shape :testInCollectionOrMember-madeBySensor-Dies-in-rdflib: *none*
+ - Shape :annotate-madeBySensor: *none*
 </div>
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for profiles/icsm-point-codetypes-shacl.ttl:
-  Validation Report
-  Conforms: False
-  Results (4):
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class surv:SurveyPointState ; sh:name Literal(&quot;state&quot;) ; sh:path surv:state ]
-  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;file:///github/workspace/&gt; ; surv:state &lt;monument-state:original&gt; ]
-  	Value Node: &lt;monument-state:original&gt;
-  	Result Path: surv:state
-  	Message: Value does not have class surv:SurveyPointState
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class surv:SurveyPointPurpose ; sh:path surv:purpose ]
-  	Focus Node: &lt;file:///github/workspace/1725787&gt;
-  	Value Node: &lt;surveypoint-purpose:boundary&gt;
-  	Result Path: surv:purpose
-  	Message: Value does not have class surv:SurveyPointPurpose
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class surv:ConditionCode ; sh:name Literal(&quot;condition&quot;) ; sh:path surv:condition ]
-  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;file:///github/workspace/&gt; ; surv:state &lt;monument-state:original&gt; ]
-  	Value Node: &lt;monument-condition:mkfd&gt;
-  	Result Path: surv:condition
-  	Message: Value does not have class surv:ConditionCode
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:class surv:MonumentForm ; sh:name Literal(&quot;form&quot;) ; sh:path surv:form ]
-  	Focus Node: [ surv:condition &lt;monument-condition:mkfd&gt; ; surv:form &lt;file:///github/workspace/&gt; ; surv:state &lt;monument-state:original&gt; ]
-  	Value Node: &lt;file:///github/workspace/&gt;
-  	Result Path: surv:form
-  	Message: Value does not have class surv:MonumentForm
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-point-codetypes-shacl.ttl:
- - Shape jcl:testBoundVocab-pt-quality-class: &lt;file:///github/workspace/1725787&gt;
- - Shape jcl:testBoundVocab-state: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
- - Shape jcl:testBoundVocab-surveypoint-purpose: &lt;file:///github/workspace/1725787&gt;
- - Shape jcl:testBoundVocab-condition: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
- - Shape jcl:testBoundVocab-vector-purpose: *none*
- - Shape jcl:testBoundVocab-form: &lt;file:///github/workspace/1725787&gt;/surv:monumentedBy
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for profiles/icsm-parcel-codetypes-shacl.ttl:
   Validation Report
   Conforms: True
   </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
- - Shape :PurposeOfSpatialUnit: *none*
- - Shape :PropertyUnit: *none*
- - Shape :ParcelState: *none*
- - Shape :Apellation: *none*
- - Shape :SecondaryParcel: *none*
- - Shape :LandInterest: *none*
- - Shape :ParcelQualityClass: *none*
- - Shape :PrimaryParcel: *none*
- - Shape :EstateParcel: *none*
- - Shape :Parcel: *none*
- - Shape :ParcelAggregate: *none*
- - Shape :ParcelType: *none*
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for profiles/icsm-parcel-codetypes-shacl.ttl:
+ - Shape jcl:testBoundVocab-parcelType: *none*
+ - Shape jcl:testBoundVocab-parcelInterest: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl:
   Validation Report
@@ -1191,6 +1775,24 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
  - Shape container:CSD: *none*
  - Shape container:CSD-seeAlso: *none*
  - Shape &lt;https://linked.data.gov.au/def/csdm/surveyprov/SurveyType&gt;: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl:
+ - Shape :PropertyUnit: *none*
+ - Shape :SecondaryParcel: *none*
+ - Shape :PurposeOfSpatialUnit: *none*
+ - Shape :ParcelAggregate: *none*
+ - Shape :Apellation: *none*
+ - Shape :LandInterest: *none*
+ - Shape :PrimaryParcel: *none*
+ - Shape :ParcelType: *none*
+ - Shape :EstateParcel: *none*
+ - Shape :ParcelState: *none*
+ - Shape :ParcelQualityClass: *none*
+ - Shape :Parcel: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl:
   Validation Report
@@ -1204,35 +1806,35 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl:
- - Shape _:n2358ed18947746a6a45a66f94078cf40b1: *none*
+ - Shape _:n2a452a20eb8647ef81b6092bdd047274b1: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl:
- - Shape topo:testTopoReferencesExist: *none*
  - Shape topo:testTopoLinesReferencePoints: *none*
+ - Shape topo:testTopoReferencesExist: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl:
- - Shape _:nc1f9a35fb8cd4409b6b5ad05da0762d1b1: &lt;file:///github/workspace/1725787&gt;/geojson:geometry
- - Shape _:nc1f9a35fb8cd4409b6b5ad05da0762d1b3: &lt;file:///github/workspace/1725787&gt;/geojson:geometry
+ - Shape _:nddeb5dfbd1fe40ebb8cff1b1deee8badb3: &lt;file:///github/workspace/1725787&gt;/geojson:geometry
+ - Shape _:nddeb5dfbd1fe40ebb8cff1b1deee8badb1: &lt;file:///github/workspace/1725787&gt;/geojson:geometry
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl:
- - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testRequiredTime&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testObservedProperty&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testFeatureOfInterest&gt;: *none*
- - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
  - Shape &lt;https://www.ogc.org/rules/sosa/#testResultNotEmptyNode&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testSimpleResultLiteral&gt;: *none*
+ - Shape &lt;https://www.ogc.org/rules/sosa/#testResult&gt;: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl:
   Validation Report
@@ -1262,6 +1864,13 @@ On instance[&#x27;wasGeneratedBy&#x27;]:
                         accordionEntries.forEach(e => e.classList.remove('show'));
                     }
                 });
+                if (location.hash.startsWith('#bblock-')) {
+                    const highlight = document.querySelector(location.hash.replaceAll('.', '\\.'));
+                    if (highlight) {
+                        highlight.querySelector('.accordion-collapse').classList.add('show');
+                        highlight.classList.add('highlighted');
+                    }
+                }
             });
         </script>
     </body>

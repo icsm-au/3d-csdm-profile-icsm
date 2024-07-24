@@ -3,13 +3,13 @@
 {
   "itemIdentifier": "icsm.profiles.icsm-3d",
   "name": "Cadastral Survey 3D profile",
-  "abstract": "2d and 3D objects allowed, observations  and coords must be 3d",
+  "abstract": "2d and 3D objects allowed, observations  and coords must be 3d.  Note that validation rules for 3D have not been elucidated pending future phases of development and testing.",
   "status": "under-development",
   "dateTimeAddition": "2023-07-31T00:00:00Z",
   "itemClass": "schema",
   "register": "icsm-csdm",
   "version": "0.1",
-  "dateOfLastChange": "2024-04-18",
+  "dateOfLastChange": "2024-07-24",
   "sources": [
     {
       "title": "3D Cadastre Survey Data Model",
@@ -37,8 +37,7 @@
   "sourceSchema": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-3d/schema.json",
   "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-3d/context.jsonld",
   "sourceFiles": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-3d/",
-  "validationPassed": false,
-  "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/icsm-3d/",
+  "validationPassed": true,
   "description": "## Cadastral Survey Data Model - ICSM common\n\nRules and default namespace bindings for ICSM Jurisdiction Profiles of the Cadastral Survey Data Model (CSDM)\n\n",
   "examples": [
     {

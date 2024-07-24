@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "icsm-csdm",
   "version": "0.1",
-  "dateOfLastChange": "2024-04-18",
+  "dateOfLastChange": "2024-07-24",
   "link": "https://github.com/icsm-au/3d-csdm-schema",
   "sources": [
     {
@@ -79,7 +79,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$defs:\n  icsm-address:\n    allOf:\n    - additionalProperties: false\n      properties:\n        propertyNumber:\n          type: string\n          x-jsonld-id: ad:propertyNumber\n        unitNumber:\n          type: string\n        streetName:\n          type: string\n          x-jsonld-id: ad:streetName\n        streetType:\n          type: string\n          x-jsonld-id: ad:streetType\n        locality:\n          type: string\n          x-jsonld-id: https://schema.org/addressLocality\n        state:\n          type: string\n          x-jsonld-id: https://schema.org/addressRegion\n        postOfficeBoxNumber:\n          type: string\n          x-jsonld-id: https://schema.org/postOfficeBoxNumber\n        postCode:\n          type: string\n          x-jsonld-id: https://schema.org/postalCode\n        country:\n          type: string\n          x-jsonld-id: https://schema.org/addressCountry\n      required:\n      - postCode\n      - state\n    - anyOf:\n      - required:\n        - streetName\n        - locality\n      - required:\n        - postOfficeBoxNumber\n        - state\n  streetAddress:\n    allOf:\n    - $ref: '#$defs/icsm-address'\n    - required:\n      - streetName\nallOf:\n- $ref: '#/$defs/icsm-address'\nx-jsonld-extra-terms:\n  address: https://schema.org/address\nx-jsonld-prefixes:\n  sdo: https://schema.org/\n  ads: https:/icsm.org.au/placeholder/address/\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$defs:\n  icsm-address:\n    allOf:\n    - additionalProperties: false\n      properties:\n        propertyNumber:\n          type: string\n          x-jsonld-id: ad:propertyNumber\n        unitNumber:\n          type: string\n        streetName:\n          type: string\n          x-jsonld-id: ad:streetName\n        streetType:\n          type: string\n          x-jsonld-id: ad:streetType\n        locality:\n          type: string\n          x-jsonld-id: https://schema.org/addressLocality\n        state:\n          type: string\n          x-jsonld-id: https://schema.org/addressRegion\n        postOfficeBoxNumber:\n          type: string\n          x-jsonld-id: https://schema.org/postOfficeBoxNumber\n        postCode:\n          type: string\n          x-jsonld-id: https://schema.org/postalCode\n        country:\n          type: string\n          x-jsonld-id: https://schema.org/addressCountry\n      required:\n      - postCode\n      - state\n    - anyOf:\n      - required:\n        - streetName\n        - locality\n      - required:\n        - postOfficeBoxNumber\n        - state\n  streetAddress:\n    allOf:\n    - $ref: '#/$defs/icsm-address'\n    - required:\n      - streetName\nallOf:\n- $ref: '#/$defs/icsm-address'\nx-jsonld-extra-terms:\n  address: https://schema.org/address\nx-jsonld-prefixes:\n  sdo: https://schema.org/\n  ads: https:/icsm.org.au/placeholder/address/\n",
   "gitRepository": "https://github.com/icsm-au/3d-csdm-profile-icsm",
   "gitPath": "_sources/datatypes/address"
 }

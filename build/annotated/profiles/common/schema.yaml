@@ -4,12 +4,20 @@ allOf:
 - $ref: https://icsm-au.github.io/3d-csdm-common/build/annotated/csdm/features/CSD/schema.yaml
 - properties:
     parcels:
-      properties:
-        features:
-          properties:
-            properties:
-              address:
-                $ref: https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.yaml#$defs/street-address
+      type: array
+      items:
+        properties:
+          features:
+            type: array
+            items:
+              properties:
+                properties:
+                  address:
+                    $ref: https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/schema.yaml#/$defs/streetAddress
+              required:
+              - properties
+        required:
+        - features
 x-jsonld-extra-terms:
   sensorType:
     x-jsonld-type: '@id'

@@ -142,7 +142,7 @@ $defs:
         - state
   streetAddress:
     allOf:
-    - $ref: '#$defs/icsm-address'
+    - $ref: '#/$defs/icsm-address'
     - required:
       - streetName
 allOf:
