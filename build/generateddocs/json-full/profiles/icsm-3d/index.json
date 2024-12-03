@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "icsm-csdm",
   "version": "0.1",
-  "dateOfLastChange": "2024-07-24",
+  "dateOfLastChange": "2024-12-03",
   "sources": [
     {
       "title": "3D Cadastre Survey Data Model",
@@ -37,6 +37,9 @@
   "sourceSchema": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-3d/schema.json",
   "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-3d/context.jsonld",
   "sourceFiles": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/icsm-3d/",
+  "rdfData": [
+    "https://icsm-au.github.io/3d-csdm-profile-icsm/data.ttl"
+  ],
   "validationPassed": true,
   "description": "## Cadastral Survey Data Model - ICSM common\n\nRules and default namespace bindings for ICSM Jurisdiction Profiles of the Cadastral Survey Data Model (CSDM)\n\n",
   "examples": [

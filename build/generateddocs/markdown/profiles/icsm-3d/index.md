@@ -95,12 +95,7 @@ Links to the schema:
       "@type": "@id"
     },
     "surveyDescription": "container:surveyDescription",
-    "surveyDescriptors": {
-      "@context": {
-        "name": "commonpatterns:name"
-      },
-      "@id": "container:surveyDescriptors"
-    },
+    "surveyDescriptors": "container:surveyDescriptors",
     "purpose": {
       "@id": "container:purpose",
       "@type": "@id"
@@ -176,14 +171,7 @@ Links to the schema:
     },
     "points": {
       "@context": {
-        "features": {
-          "@container": "@set",
-          "@id": "geojson:features"
-        },
         "name": {
-          "@context": {
-            "name": "commonpatterns:name"
-          },
           "@id": "rdfs:label",
           "@type": "@id"
         },
@@ -206,12 +194,7 @@ Links to the schema:
         },
         "age": "surv:age",
         "note": "rdfs:comment",
-        "geodeticid": {
-          "@context": {
-            "name": "commonpatterns:name"
-          },
-          "@id": "surv:geodeticid"
-        },
+        "geodeticid": "surv:geodeticid",
         "condition": {
           "@type": "@id",
           "@id": "surv:condition"
@@ -242,10 +225,6 @@ Links to the schema:
     },
     "observedVectors": {
       "@context": {
-        "features": {
-          "@container": "@set",
-          "@id": "geojson:features"
-        },
         "references": {
           "@id": "geojson:relatedFeatures",
           "@type": "@id",
@@ -254,27 +233,10 @@ Links to the schema:
       },
       "@id": "container:observedVectors"
     },
-    "adoptedVectors": {
-      "@context": {
-        "features": {
-          "@container": "@set",
-          "@id": "geojson:features"
-        }
-      },
-      "@id": "container:adoptedVectors"
-    },
+    "adoptedVectors": "container:adoptedVectors",
     "parcels": {
       "@context": {
-        "features": {
-          "@container": "@set",
-          "@id": "geojson:features"
-        },
-        "appellation": {
-          "@context": {
-            "name": "commonpatterns:name"
-          },
-          "@id": "parcel:appellation"
-        },
+        "appellation": "parcel:appellation",
         "parcelType": {
           "@id": "parcel:type",
           "@type": "@id"
@@ -342,7 +304,60 @@ Links to the schema:
       "@id": "container:parcels"
     },
     "vectorObservations": {
-      "@context": {},
+      "@context": {
+        "features": {
+          "@id": "sosa:hasMember",
+          "@type": "@id",
+          "@container": "@set",
+          "@context": {
+            "features": {
+              "@container": "@set",
+              "@id": "sosa:hasMember",
+              "@type": "@id"
+            },
+            "Prism": {
+              "@id": "geojson:Prism",
+              "@context": {
+                "base": "geojson:prismBase",
+                "lower": "geojson:prismLower",
+                "upper": "geojson:prismUpper"
+              }
+            },
+            "MultiPrism": {
+              "@id": "geojson:MultiPrism",
+              "@context": {
+                "prisms": "geojson:prisms"
+              }
+            },
+            "observedProperty": {
+              "@id": "sosa:observedProperty",
+              "@type": "@id"
+            },
+            "madeBySensor": {
+              "@id": "sosa:madeBySensor",
+              "@type": "@id"
+            },
+            "hasResult": {
+              "@id": "sosa:hasResult",
+              "@type": "@id",
+              "@context": {
+                "pose": "surv:pose",
+                "distance": "surv:distance"
+              }
+            },
+            "angleAccuracy": "csdm:surveyobs/angleAccuracyMeasure",
+            "distanceAccuracy": "csdm:surveyobs/distanceAccuracyMeasure",
+            "distanceAccuracyClass": {
+              "@type": "@id",
+              "@id": "csdm:surveyobs/distanceAccuracyClass"
+            },
+            "angleAccuracyClass": {
+              "@type": "@id",
+              "@id": "csdm:surveyobs/angleAccuracyClass"
+            }
+          }
+        }
+      },
       "@id": "container:vectorObservations"
     },
     "resultTime": "sosa:resultTime",
@@ -490,12 +505,28 @@ Links to the schema:
       "@type": "@id"
     },
     "features": {
-      "@id": "sosa:hasMember",
+      "@id": "geojson:features",
       "@type": "@id",
+      "@container": "@set",
       "@context": {
         "features": {
           "@container": "@set",
-          "@id": "geojson:features"
+          "@id": "sosa:hasMember",
+          "@type": "@id"
+        },
+        "Prism": {
+          "@id": "geojson:Prism",
+          "@context": {
+            "base": "geojson:prismBase",
+            "lower": "geojson:prismLower",
+            "upper": "geojson:prismUpper"
+          }
+        },
+        "MultiPrism": {
+          "@id": "geojson:MultiPrism",
+          "@context": {
+            "prisms": "geojson:prisms"
+          }
         },
         "observedProperty": {
           "@id": "sosa:observedProperty",
@@ -523,8 +554,7 @@ Links to the schema:
           "@type": "@id",
           "@id": "csdm:surveyobs/angleAccuracyClass"
         }
-      },
-      "@container": "@set"
+      }
     },
     "forProperty": {
       "@id": "sosa:forProperty",
@@ -800,14 +830,6 @@ Links to the schema:
     },
     "occupationObservations": {
       "@context": {
-        "observedProperty": {
-          "@id": "sosa:observedProperty",
-          "@type": "@id"
-        },
-        "madeBySensor": {
-          "@id": "sosa:madeBySensor",
-          "@type": "@id"
-        },
         "features": {
           "@id": "sosa:hasMember",
           "@type": "@id"
@@ -815,20 +837,9 @@ Links to the schema:
       },
       "@id": "container:occupationObservations"
     },
-    "occupationFeatures": {
-      "@context": {
-        "features": {
-          "@container": "@set",
-          "@id": "geojson:features"
-        }
-      },
-      "@id": "container:occupationFeatures"
-    },
+    "occupationFeatures": "container:occupationFeatures",
     "type": "@type",
-    "geometry": {
-      "@context": {},
-      "@id": "geojson:geometry"
-    },
+    "geometry": "geojson:geometry",
     "bbox": {
       "@container": "@list",
       "@id": "geojson:bbox"
@@ -916,7 +927,7 @@ Links to the schema:
       "@type": "@id",
       "@id": "geojson:topology"
     },
-    "name": "rdfs:label",
+    "name": "commonpatterns:name",
     "bearingRotation": "container:bearingRotation",
     "annotations": {
       "@context": {
@@ -952,7 +963,6 @@ Links to the schema:
       "@type": "@id"
     },
     "wasGeneratedBy": {
-      "@context": {},
       "@id": "prov:wasGeneratedBy",
       "@type": "@id"
     },
@@ -972,7 +982,8 @@ Links to the schema:
         "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
-        "length": "dct:extent"
+        "length": "dct:extent",
+        "name": "rdfs:label"
       },
       "@id": "prov:wasAttributedTo",
       "@type": "@id"
@@ -994,7 +1005,6 @@ Links to the schema:
       "@type": "@id"
     },
     "wasInvalidatedBy": {
-      "@context": {},
       "@id": "prov:wasInvalidatedBy",
       "@type": "@id"
     },
@@ -1111,6 +1121,9 @@ Links to the schema:
     "qualifiedAttribution": {
       "@context": {
         "agent": {
+          "@context": {
+            "name": "rdfs:label"
+          },
           "@id": "prov:agent",
           "@type": "@id"
         }
@@ -1119,46 +1132,12 @@ Links to the schema:
       "@type": "@id"
     },
     "wasInfluencedBy": {
-      "@context": {
-        "href": {
-          "@type": "@id",
-          "@id": "oa:hasTarget"
-        },
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:type",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent"
-      },
       "@id": "prov:wasInfluencedBy",
       "@type": "@id"
     },
     "qualifiedInfluence": {
       "@context": {
         "influencer": {
-          "@context": {
-            "href": {
-              "@type": "@id",
-              "@id": "oa:hasTarget"
-            },
-            "rel": {
-              "@context": {
-                "@base": "http://www.iana.org/assignments/relation/"
-              },
-              "@id": "http://www.iana.org/assignments/relation",
-              "@type": "@id"
-            },
-            "type": "dct:type",
-            "hreflang": "dct:language",
-            "title": "rdfs:label",
-            "length": "dct:extent"
-          },
           "@id": "prov:influencer",
           "@type": "@id"
         },
@@ -1171,23 +1150,6 @@ Links to the schema:
           "@type": "@id"
         },
         "agent": {
-          "@context": {
-            "href": {
-              "@type": "@id",
-              "@id": "oa:hasTarget"
-            },
-            "rel": {
-              "@context": {
-                "@base": "http://www.iana.org/assignments/relation/"
-              },
-              "@id": "http://www.iana.org/assignments/relation",
-              "@type": "@id"
-            },
-            "type": "dct:type",
-            "hreflang": "dct:language",
-            "title": "rdfs:label",
-            "length": "dct:extent"
-          },
           "@id": "prov:agent",
           "@type": "@id"
         }
@@ -1197,7 +1159,6 @@ Links to the schema:
     },
     "provType": "@type",
     "hadMember": {
-      "@context": {},
       "@id": "prov:hadMember",
       "@type": "@id"
     },
@@ -1222,7 +1183,8 @@ Links to the schema:
         "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
-        "length": "dct:extent"
+        "length": "dct:extent",
+        "name": "rdfs:label"
       },
       "@id": "prov:wasAssociatedWith",
       "@type": "@id"
@@ -1232,27 +1194,22 @@ Links to the schema:
       "@type": "@id"
     },
     "used": {
-      "@context": {},
       "@id": "prov:used",
       "@type": "@id"
     },
     "wasStartedBy": {
-      "@context": {},
       "@id": "prov:wasStartedBy",
       "@type": "@id"
     },
     "wasEndedBy": {
-      "@context": {},
       "@id": "prov:wasEndedBy",
       "@type": "@id"
     },
     "invalidated": {
-      "@context": {},
       "@id": "prov:invalidated",
       "@type": "@id"
     },
     "generated": {
-      "@context": {},
       "@id": "prov:generated",
       "@type": "@id"
     },
@@ -1335,6 +1292,9 @@ Links to the schema:
     "qualifiedAssociation": {
       "@context": {
         "agent": {
+          "@context": {
+            "name": "rdfs:label"
+          },
           "@id": "prov:agent",
           "@type": "@id"
         },
@@ -1352,23 +1312,6 @@ Links to the schema:
     },
     "agentType": "@type",
     "actedOnBehalfOf": {
-      "@context": {
-        "href": {
-          "@type": "@id",
-          "@id": "oa:hasTarget"
-        },
-        "rel": {
-          "@context": {
-            "@base": "http://www.iana.org/assignments/relation/"
-          },
-          "@id": "http://www.iana.org/assignments/relation",
-          "@type": "@id"
-        },
-        "type": "dct:type",
-        "hreflang": "dct:language",
-        "title": "rdfs:label",
-        "length": "dct:extent"
-      },
       "@id": "prov:actedOnBehalfOf",
       "@type": "@id"
     },

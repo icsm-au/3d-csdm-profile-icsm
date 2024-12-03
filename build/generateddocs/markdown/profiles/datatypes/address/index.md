@@ -28,14 +28,14 @@ A simple address with street number
 #### jsonld
 ```jsonld
 {
+  "@context": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld",
   "propertyNumber": "4",
   "streetName": "Clarendon",
   "streetType": "St",
   "locality": "Maidstone",
   "state": "VIC",
   "postCode": "3012",
-  "country": "Australia",
-  "@context": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld"
+  "country": "Australia"
 }
 ```
 
@@ -73,12 +73,12 @@ A simple address with PO box
 #### jsonld
 ```jsonld
 {
+  "@context": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld",
   "postOfficeBoxNumber": "4334",
   "locality": "Maidstone",
   "state": "VIC",
   "postCode": "3012",
-  "country": "Australia",
-  "@context": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld"
+  "country": "Australia"
 }
 ```
 

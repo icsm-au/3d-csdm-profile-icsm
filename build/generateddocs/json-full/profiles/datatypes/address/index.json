@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "icsm-csdm",
   "version": "0.1",
-  "dateOfLastChange": "2024-07-24",
+  "dateOfLastChange": "2024-12-03",
   "link": "https://github.com/icsm-au/3d-csdm-schema",
   "sources": [
     {
@@ -33,6 +33,9 @@
   "sourceSchema": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/datatypes/address/schema.json",
   "sourceLdContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/datatypes/address/context.jsonld",
   "sourceFiles": "https://icsm-au.github.io/3d-csdm-profile-icsm/_sources/datatypes/address/",
+  "rdfData": [
+    "https://icsm-au.github.io/3d-csdm-profile-icsm/data.ttl"
+  ],
   "validationPassed": true,
   "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/datatypes/address/",
   "examples": [
@@ -47,7 +50,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"propertyNumber\": \"4\",\n  \"streetName\": \"Clarendon\",\n  \"streetType\": \"St\",\n  \"locality\": \"Maidstone\",\n  \"state\": \"VIC\",\n  \"postCode\": \"3012\",\n  \"country\": \"Australia\",\n  \"@context\": \"https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld\",\n  \"propertyNumber\": \"4\",\n  \"streetName\": \"Clarendon\",\n  \"streetType\": \"St\",\n  \"locality\": \"Maidstone\",\n  \"state\": \"VIC\",\n  \"postCode\": \"3012\",\n  \"country\": \"Australia\"\n}",
           "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/tests/profiles/datatypes/address/example_1_1.jsonld"
         },
         {
@@ -68,7 +71,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"postOfficeBoxNumber\": \"4334\",\n  \"locality\": \"Maidstone\",\n  \"state\": \"VIC\",\n  \"postCode\": \"3012\",\n  \"country\": \"Australia\",\n  \"@context\": \"https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/datatypes/address/context.jsonld\",\n  \"postOfficeBoxNumber\": \"4334\",\n  \"locality\": \"Maidstone\",\n  \"state\": \"VIC\",\n  \"postCode\": \"3012\",\n  \"country\": \"Australia\"\n}",
           "url": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/tests/profiles/datatypes/address/example_2_1.jsonld"
         },
         {

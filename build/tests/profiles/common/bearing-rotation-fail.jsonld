@@ -1,4 +1,5 @@
 {
+  "@context": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/context.jsonld",
   "description": "fail on missing bearingRotation",
   "id": "DP_572532",
   "name": "DP 572532",
@@ -15,6 +16,5 @@
   "referencedCSDs": [],
   "points": [],
   "observedVectors": [],
-  "vectorObservations": [],
-  "@context": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/context.jsonld"
+  "vectorObservations": []
 }
