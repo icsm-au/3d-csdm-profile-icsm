@@ -30,27 +30,27 @@
   "superBBlock": false,
   "shaclRules": {
     "icsm.profiles.common": [
-      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
+      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl",
       "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-survey-metadata-shacl.ttl",
-      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl",
+      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-references-shacl.ttl",
       "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-observation-properties.shacl",
-      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-parcel-codetypes-shacl.ttl"
+      "https://icsm-au.github.io/3d-csdm-profile-icsm/profiles/icsm-point-codetypes-shacl.ttl"
     ],
     "icsm.csdm.features.CSD": [
-      "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl",
       "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/CSD/tests/obs-match-vectors.shacl",
+      "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/container.shapes.ttl",
       "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/shapes/parcel_module.shapes.ttl"
     ],
     "icsm.csdm.datatypes.compoundName": [
       "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/datatypes/compoundName/rules.shacl"
     ],
     "ogc.geo.topo.features.topo-feature-collection": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ],
     "ogc.geo.topo.features.topo-feature": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ],
     "icsm.csdm.features.SurveyObservations": [
       "https://icsm-au.github.io/3d-csdm-common/_sources/csdm/features/SurveyObservations/rules.shacl"
@@ -59,44 +59,44 @@
       "https://opengeospatial.github.io/ogcapi-sosa/_sources/properties/observation/rules.shacl"
     ],
     "ogc.geo.topo.features.topo-arc": [
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl",
-      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl"
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature/tests/geometry-coordinates.shacl",
+      "https://ogcincubator.github.io/topo-feature/_sources/features/topo-feature-collection/tests/topo-refs-exist.shacl"
     ]
   },
   "shaclClosures": [
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/CSD-Header/icsm-admin-unit-type.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/Parcels/icsm-parcel-state.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyObservations/icsm-angle-type.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyObservations/icsm-distance-type.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyObservations/icsm-equipment-type.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyObservations/icsm-procedure-used.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyObservations/nz-procedure-used.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyPoints/condition/nz-condition.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyPoints/monument/nz-monument-type.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/CSD-Header/nz-crs.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/CSD-Header/nz-compound-crs.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/CSD-Header/nz-land-district.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/CSD-Header/nz-territorial-authority.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/CSD-Header/nz-survey-documentation-type.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/CSD-Header/nz-annotation.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/CSD-Header/nz-survey-type.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/CSD-Header/nz-annotation.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/CSD-Header/nz-vhd.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/CSD-Header/nz-survey-purpose.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/Parcels/nz-parcel-type.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/Parcels/nz-secondary-parcel-purpose.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/Parcels/nz-parcel-purpose.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/Parcels/nz-parcel-state.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyObservations/nz-vector-purpose.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyPoints/accuracy/nz-point-class.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyPoints/monument/nz-monument-type.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyPoints/condition/nz-condition.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyPoints/purpose/nz-purpose.ttl",
-    "https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyPoints/state/nz-state.ttl"
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/icsm-admin-unit-type.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/Parcels/icsm-parcel-state.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/icsm-angle-type.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/icsm-distance-type.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/icsm-equipment-type.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/icsm-procedure-used.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/nz-procedure-used.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyPoints/condition/nz-condition.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyPoints/monument/nz-monument-type.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/nz-crs.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/nz-compound-crs.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/nz-land-district.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/nz-territorial-authority.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/nz-survey-documentation-type.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/nz-annotation.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/nz-survey-type.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/nz-annotation.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/nz-vhd.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/CSD-Header/nz-survey-purpose.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/Parcels/nz-parcel-type.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/Parcels/nz-secondary-parcel-purpose.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/Parcels/nz-parcel-purpose.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/Parcels/nz-parcel-state.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyObservations/nz-vector-purpose.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyPoints/accuracy/nz-point-class.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyPoints/monument/nz-monument-type.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyPoints/condition/nz-condition.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyPoints/purpose/nz-purpose.ttl",
+    "https://icsm-au.github.io/icsm-vocabs/vocabs/LandParcels/SurveyPoints/state/nz-state.ttl"
   ],
   "dependsOn": [
-    "icsm.profiles.datatypes.address",
-    "icsm.csdm.features.CSD"
+    "icsm.csdm.features.CSD",
+    "icsm.profiles.datatypes.address"
   ],
   "ldContext": "https://icsm-au.github.io/3d-csdm-profile-icsm/build/annotated/profiles/common/context.jsonld",
   "schema": {
@@ -109,7 +109,7 @@
   "rdfData": [
     "https://icsm-au.github.io/3d-csdm-profile-icsm/data.ttl"
   ],
-  "validationPassed": false,
+  "validationPassed": true,
   "testOutputs": "https://github.com/icsm-au/3d-csdm-profile-icsm/blob/main/build/tests/profiles/common/",
   "description": "## Cadastral Survey Data Model - ICSM common\n\nRules and default namespace bindings for ICSM Jurisdiction Profiles of the Cadastral Survey Data Model (CSDM).\n\nThe ICSM profiles defines an Address schema for annotation of Parcel objects, and a set of vocabularies where the ICSM Cadastral Survey Working Group have identified common terminology and semantics (meaning).\n\nIndividual jurisdictions can define one or more specific profiles of the ICSM profile for different applications, using this as a base profile enforces use of both the common model and the common ICSM content standards.\n\n",
   "examples": [

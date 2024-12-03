@@ -57,12 +57,12 @@
     rdfs:label "Cadastral Survey 2D (+elevation) basic Profile" ;
     dct:abstract "Profile to constrain a 2D implementation of the 3D Cadastre Survey Data Model" ;
     dct:created "2023-07-31T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/json-full/profiles/icsm-2d/index.json" ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/markdown/profiles/icsm-2d/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://icsm-au.github.io/3d-csdm-profile-icsm/bblock/icsm.profiles.icsm-2d" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/json-full/profiles/icsm-2d/index.json" ] ;
+            rdfs:isDefinedBy "https://icsm-au.github.io/3d-csdm-profile-icsm/bblock/icsm.profiles.icsm-2d" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2024-12-03"^^xsd:date ;
     dct:source <https://icsm-au.github.io/3d-csdm-design/2022/spec.html> ;
@@ -86,12 +86,12 @@
     rdfs:label "Cadastral Survey 3D profile" ;
     dct:abstract "2d and 3D objects allowed, observations  and coords must be 3d.  Note that validation rules for 3D have not been elucidated pending future phases of development and testing." ;
     dct:created "2023-07-31T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://icsm-au.github.io/3d-csdm-profile-icsm/bblock/icsm.profiles.icsm-3d" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/json-full/profiles/icsm-3d/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/markdown/profiles/icsm-3d/index.md" ] ;
+            rdfs:isDefinedBy "https://icsm-au.github.io/3d-csdm-profile-icsm/build/generateddocs/markdown/profiles/icsm-3d/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://icsm-au.github.io/3d-csdm-profile-icsm/bblock/icsm.profiles.icsm-3d" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2024-12-03"^^xsd:date ;
     dct:source <https://icsm-au.github.io/3d-csdm-design/2022/spec.html> ;
@@ -163,14 +163,14 @@ The relationships of this profile to specific jurisdictional profiles and and th
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-12-03T04:37:03.930381"^^xsd:dateTime ;
-    prov:startedAtTime "2024-12-03T04:37:03.859638"^^xsd:dateTime ;
+    prov:endedAtTime "2024-12-03T07:02:19.988134"^^xsd:dateTime ;
+    prov:startedAtTime "2024-12-03T07:02:19.917433"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
         [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:c73285eea25b7078b81760cd35b9cb220035f3c7" ;
+            dct:hasVersion "git:cb33d594f4a101fd40b5dd63f00f37485f939fbc" ;
             rdfs:seeAlso <https://icsm-au.github.io/3d-csdm-profile-icsm/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
