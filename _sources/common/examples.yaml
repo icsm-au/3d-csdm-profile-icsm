@@ -9,6 +9,6 @@
 #      ref: ../nz/example.json
 #      base-uri: http://www.example.com/features/
 #      shacl-closure:
-#        - https://icsm-au.github.io/icsm-vocabs/cadastreSurveyPoints/condition/nz-condition.csv.ttl
-#        - https://icsm-au.github.io/icsm-vocabs/cadastreSurveyPoints/monument/nz-monument-type.csv.ttl
-#        - https://icsm-au.github.io/icsm-vocabs/cadastreSurveyPoints/state/nz-state.csv.ttl
+#        - https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyPoints/condition/nz-condition.csv.ttl
+#        - https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyPoints/monument/nz-monument-type.csv.ttl
+#        - https://icsm-au.github.io/vocabs/vocabs/LandParcels/SurveyPoints/state/nz-state.csv.ttl
